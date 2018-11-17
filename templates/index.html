@@ -1,6 +1,69 @@
 {% extends "index_core.html" %}
 {% block content %}
-     
+ 
+ <html>
+
+<head>
+  <meta charset="utf-8">
+  <title>EatsEncore ML POC</title>
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <!--  jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Bootstrap Date-Picker Plugin -->
+
+</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+  <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js">
+</script>
+
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+<script type='text/javascript' src='//code.jquery.com/jquery-1.8.3.js'>
+<script type='text/javascript'>
+$(function(){
+$('.input-group.date').datepicker({
+    calendarWeeks: true,
+    todayHighlight: true,
+    autoclose: true
+});  
+});
+
+</script>
+</head>
+
+<body>
+  <!--NAV BAR -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display 
+        DOES THIS NEED TOGGLE? ALSO, WHAT DOES COLLAPSED MEAN HERE?-->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<!--         <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> -->
+      </button>
+        <a class="navbar-brand" href="#">BOUNTIFUL</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Find what you're craving">
+          </div>
+          <button type="submit" class="btn btn-default">MMMmmmmm</button>
+        </form>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
      <div class="container">
        <div class="row">
          <div class="col-md-12 text-center mt-3">
@@ -8,5 +71,87 @@
          </div>
        </div>
      </div>
+  <!--HOMEPAGE: LEFT COLUMN CODE GOES HERE-->
+  <div class="container">
+    <!-- First Row: IS THIS CORRECT? IS IT A ROW? -->
+    <div class="row">
+      <!-- 1 of 2 columns -->
+      <div class="col-xs-6 col-md-12 ">
+      </div>
+      <h1>Feeling Hungry?</h1>
+      <h3>Order some delish grub</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <!--DO WE NEED LINKS TO ANYTHING? OUR BIOS? THE GITHUB REPO?-->
+
+      <!--VERTICAL RULE LINE GOES HERE (TBD)-->
+      <!-- 2 of 2 columns -->
+      <!--HOMEPAGE: RIGHT COLUMN CODE GOES HERE-->
+      <div class="col-xs-6 col-md-12 ">
+      <p>Gender</p>
+      <!--GENDER FORM, radio buttons-->
+      <form>
+        <input type="radio" name="gender" value="female" checked> Female<br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <br>
+      </form>
+      </div>
+    <!--END GENDER FORM-->
+
+    <!--DATEPICKER FORM-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+
+    <!-- Form code begins -->
+    <form method="post">
+      <div class="form-group"> <!-- Date input -->
+        <label class="control-label" for="date">Date</label>
+        <input class="form-control" id="date" name="date" placeholder="Which day?" type="text"/>
+      </div>
+      <div class="form-group"> <!-- Submit button -->
+        <button class="btn btn-primary " name="submit" type="submit">Pick Up Date</button>
+      </div>
+     </form>
+     <!-- END DATEPICKER FORM --> 
+
+     <!-- TIMEPICKER FORM -->
+     <!-- STILL NEED TO ADD DROPDOWN TIME AS POP UP ON CLICK, LIKE THE CALENDAR -->
+     <div class="md-form">
+      <input placeholder="What time?" type="text" id="input_starttime" class="form-control timepicker">
+      <div class="form-group"> <!-- Submit button -->
+        <button class="btn btn-primary " name="submit" type="submit">Pick Up Time</button>
+      </div>
+      <!-- <label for="input_starttime">Light version, 12hours</label> -->
+</div>
+
+<!--DATEPICKER JS -->
+<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+</script>
+
+<!--TIMEPICKER JS -->
+<script>
+  $('#spanExample').timepicker();
+    $('#openSpanExample').on('click', function(){
+    $('#spanExample').timepicker('show');
+});
+    // Time Picker Initialization
+$('#input_starttime').pickatime({});
+</script>
+
+
+</body>
+
+</html>
 
 {% endblock %}
