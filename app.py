@@ -15,8 +15,6 @@ app.config['STATIC_FOLDER'] = 'static'
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///db/eatsencore.sqlite"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-engine = db.get_engine()
-session = Session(engine)
 
 
 @app.route("/")
@@ -27,6 +25,9 @@ def index():
 @app.route("/get_products/<loc_id>",methods=['GET'])
 def get_products(loc_id):
 
+    engine = db.get_engine()
+    session = Session(engine)
+    
     try:
         lid = int(loc_id)
     except:

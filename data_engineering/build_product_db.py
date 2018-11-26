@@ -7,6 +7,9 @@ import collections
 
 import product_models as pm
 
+# get hand-coded product image file
+df_img = pd.read_csv('product_image_mapping.csv')
+
 # get an engine
 from sqlalchemy import create_engine
 engine = create_engine('sqlite:///../db/eatsencore.sqlite')
@@ -50,7 +53,19 @@ def fix_price_issues(xdf):
 
     
     return new_df
+
+def assign_image(xdf,df_img):
+
+    xdf['img'] = None
+
+    df_img = df_img.copy()
+    df_img.set_index('id',inplace=True)
     
+    for index,row in xdf.iterrows():
+
+        xdf.loc[index,'img'] = df_img.loc[row['items_id'],'img']
+        
+    return xdf
 
 # Now fill the database
 def insert_items(xdf,session,loc_id):
@@ -69,6 +84,9 @@ def insert_items(xdf,session,loc_id):
                 row['display_description'] = ""
         
         item.display_desc = row['display_description']
+
+        item.img = row['img']
+        
         item.location_id = loc_id
 
         cat = session.query(pm.Category).filter(pm.Category.name \
@@ -76,7 +94,7 @@ def insert_items(xdf,session,loc_id):
         item.category_id = cat.id
         session.add(item)
 
-    #session.commit()
+    session.commit()
 
 
 # two locations:
@@ -146,7 +164,11 @@ xdf = xdf.drop_duplicates()
 # more cleaning
 xdf = fix_price_issues(xdf)
 
+xdf = assign_image(xdf,df_img)
+
 insert_items(xdf,session,1)
+
+
 
 # done with location 1, ready for location 2    
 xdf = df2[ ['items_id','items_name','item_price',
@@ -166,5 +188,7 @@ xdf.loc[ xdf['items_id'] == 4313, 'display_description'] =\
 xdf = xdf.drop_duplicates()
 
 xdf = fix_price_issues(xdf)
+
+xdf = assign_image(xdf,df_img)
 
 insert_items(xdf,session,2)

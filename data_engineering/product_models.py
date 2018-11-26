@@ -16,6 +16,7 @@ class Product(Base):
     price =  Column(Unicode(10),nullable=False, server_default=u'')
     display_desc = Column(Unicode(256),
                               nullable=False, server_default=u'')
+    img = Column(Unicode(256),nullable=True)
     category_id = Column(Integer, ForeignKey('category.id'),
                          nullable=False)
     category = relationship("Category",back_populates="products")
