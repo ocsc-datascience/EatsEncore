@@ -5,7 +5,6 @@ import sqlalchemy as sql
 import numpy as np
 import collections
 
-
 #read data
 if1 = "../data/comissionary_orders.csv"
 if2 = "../data/harbor_house_orders.csv"
@@ -24,6 +23,7 @@ df2 = pd.read_csv(if2)
 df1 = df1.loc[ df1['items_id'] != 5141 ]
 df1 = df1.loc[ df1['items_id'] != 4826 ]
 df1.loc[ df1['items_id'] == 3275, 'items_id' ] = 3273
+
 
 
 # location 2:
