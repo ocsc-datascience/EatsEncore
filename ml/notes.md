@@ -18,6 +18,7 @@ However, this is not supermarket basket analysis. We're doing this for restauran
 Some caveats:
 
 * Some menu items come with a beverage.
+* All kids items include drink, sides, deserts. We don't allow them to buy another entree, but we allow other beverages and deserts and sides. We throw out alcoholic beverages, coffee, and tee.
 * Many orders have more than one item per category because they were most likely for multiple people. Got to deal with this.
 * Need to build adaptive recommendation engine. Customer selects entree -> predict beverage, side, dessert etc. Bev. in the following may include alcoholoic beverages.
 	* {entree} -> {side,bev,dessert}
