@@ -1,83 +1,6 @@
-<!--KNOW IDEA WHAT THIS IS OR WHERE IT CAME FROM
 {% extends "index_core.html" %}
 {% block content %}
--->
- 
-<html>
 
-<head>
-  <meta charset="utf-8">
-  <title>
-    EatsEncore 
-  </title>
-  
-  <!-- Bring in the project's Bootstrap Stylesheet -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Bring in jQuery -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js">
-  </script>
-
-  <!-- Bootstrap Date-Picker Plugin -->
-  <script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
-    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js">
-  </script>
-
-  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js">
-  </script>
-
-  <script type='text/javascript' src='//code.jquery.com/jquery-1.8.3.js'>
-  
-  <script type='text/javascript'>
-  $(function(){
-  $('.input-group.date').datepicker({
-      calendarWeeks: true,
-      todayHighlight: true,
-      autoclose: true
-  });  
-  });
-
-  </script>
-</head>
-
-<body>
-  <!--NAV BAR -->
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display 
-        DOES THIS NEED TOGGLE? ALSO, WHAT DOES COLLAPSED MEAN HERE?-->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <!--
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-        -->
-        </button>
-        <a class="navbar-brand" href="#">EatsEncore</a>
-      </div>
-
-      <!--NAVBAR CONTENT-->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <form class="navbar-form navbar-left">
-          <!--SEARCH FIELD
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Find what you're craving">
-          </div>
-          <button type="submit" class="btn btn-default">MMMmmmmm</button>-->
-        </form>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-
-  <!--MAIN CONTENT: BEGINS -->
-  <div class="container">
     <div class="row">
       <div class="col-md-12 text-left mt-3">
         <h1>Welcome to EatsEncore!</h1>
@@ -88,106 +11,37 @@
   
   <!--HOMEPAGE: LEFT COLUMN CODE GOES HERE-->
   <div class="row">
-    <div class="column">
-    <!--<div class="container"> -->
-    <!-- First Row: IS THIS CORRECT? IS IT A ROW? -->
-    <!-- <div class="row"> -->
-      <!-- 1 of 2 columns -->
-      <div class="col-xs-6 col-md-4 " style="padding-right:25px; ">
-        <h3>About This ML Project</h3>
-        <p>EatsEncore provide recommendations that will enhance a meal at a given restaurant. This machine learning recommendation engine utilized proprietary data from two restaurants. The second restaurant helped prove our code so that we can confidently say that the algorithm may be applied to data from additional restaurants or mobile app orders and, ideally, increase purchase volume.</p>
-
-        <p>Our three-person team completed this after-work project in approximately 3 weeks.</p>
+    <div class="col-xs-6 col-md-4 " style="padding-right:25px; ">
+      <h3>About This ML Project</h3>
+      <p>EatsEncore provide recommendations that will enhance a meal at a given restaurant. This machine learning
+      recommendation engine utilized proprietary data from two restaurants. The second restaurant helped prove our code
+      so that we can confidently say that the algorithm may be applied to data from additional restaurants or mobile
+      app orders and, ideally, increase purchase volume.</p>
+  
+      <p>Our three-person team completed this after-work project in approximately 3 weeks.</p>
+    </div>
+    <div class="col-xs-6 col-md-8 " style="padding-left:25px; border-left: 1px solid #ccc;">
+    <h3>Start Your Order</h3>
+    <h4>Details for Testing Machine Learning Program</h4>
+    <p></p>
+    <form method="POST">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="exampleFormControlSelect1">Please choose your age group:</label>
+        <select class="form-control" id="age_group" name="age_group">
+          <option value="0">Age is 0–14</option>
+          <option value="1">Age is 15–20</option>
+          <option value="2">Age is 21+</option>
+        </select>
       </div>
     </div>
-      <!--DO WE NEED LINKS TO ANYTHING? OUR BIOS? THE GITHUB REPO?-->
-
-      <!--VERTICAL RULE LINE GOES HERE (TBD)-->
-      <!-- 2 of 2 columns -->
-      <!--HOMEPAGE: RIGHT COLUMN CODE GOES HERE-->
-    <div class="column">
-      <div class="col-xs-6 col-md-8 " style="padding-left:25px; border-left: 1px solid #ccc;">
-        <h3>Start Your Order</h3>
-        <h4>Details for Testing Machine Learning Program</h4>
-        <p></p>
-
-        <p><strong>Gender</strong></p>
-        <!--GENDER FORM, radio buttons-->
-        <form>
-          <input type="radio" name="gender" value="female" checked> Female<br>
-          <input type="radio" name="gender" value="male"> Male<br>
-          <br>
-        </form>
-    <!--END GENDER FORM-->
-    <!--AGE FORM-->
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Age Group</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Age is 0–14</option>
-              <option>Age is 15–20</option>
-              <option>Age is 21+</option>
-            </select>
-          </div>
-
-    <!--DATEPICKER FORM-->
-    <div class="container-fluid">
-      <div class="row">
-    <form method="post">
-      <div class="form-group"> <!-- Date input -->
-        <label class="control-label" for="date"><p>Date</p></label>
-        <input class="form-control" id="date" name="date" placeholder="Which day?" type="text"/>
+    <div class="form-row">
+      <div class="form-group col-md-2">
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
-      <div class="form-group"> <!-- Submit button -->
-        <button class="btn btn-primary " name="submit" type="submit">Submit Your Info</button>
-        <p></p>
-      </div>
-     </form>
-     <!-- END DATEPICKER FORM --> 
-
-     <!-- TIMEPICKER FORM -->
-     <!-- STILL NEED TO ADD DROPDOWN TIME AS POP UP ON CLICK, LIKE THE CALENDAR -->
-     <!-- <div class="md-form">
-      <label class="control-label" for="date"><p>Lunch or Dinner?</p></label>
-      <input placeholder="What time?" type="text" id="input_starttime" class="form-control timepicker">
-      <div class="form-group"> 
-        <!-- Submit button --> 
-        <!-- <button class="btn btn-primary " name="submit" type="submit">Pick Up Time</button>
-      </div> -->
-      <!-- <label for="input_starttime">Light version, 12hours</label> 
-      </div> --> 
+    </div>
+    </form>
     </div>
   </div>
-</div>
 
-<!--DATEPICKER JS -->
-<script>
-    $(document).ready(function(){
-      var date_input=$('input[name="date"]'); //our date input has the name "date"
-      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-      var options={
-        format: 'mm/dd/yyyy',
-        container: container,
-        todayHighlight: true,
-        autoclose: true,
-      };
-      date_input.datepicker(options);
-    })
-</script>
-
-<!--TIMEPICKER JS -->
-<script>
-  $('#spanExample').timepicker();
-    $('#openSpanExample').on('click', function(){
-    $('#spanExample').timepicker('show');
-});
-    // Time Picker Initialization
-$('#input_starttime').pickatime({});
-</script>
-
-
-</body>
-
-</html>
-
-<!--KNOW IDEA WHAT THIS IS OR WHERE IT CAME FROM 
-  {% endblock %}-->
+{% endblock %}
