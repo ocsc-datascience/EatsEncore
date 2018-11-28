@@ -15,16 +15,18 @@
        <p><button class="btn btn-primary " name="submit" type="submit">Go To Checkout</button></p> 
     </div>
 </div>
+
+<!--Products: Entrées-->
 <div class="row">
 {% for item in entrees %}
-  <div class="col-md-3">
+  <div class="col-md-2">
     <div class="card mb-2 box-shadow">
       <img class="card-img-top"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
       <div class="card-body">
         <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button class="btn class{{item.category_id}}" id="{{ item.id }}" type="button"  style="padding-left: 100px; color: blue"><strong>Add Item</strong></button>
+            <button class="btn class{{item.category_id}}" id="{{ item.id }}" type="button"  style="padding-left: 10px; color: blue"><strong>Add Item</strong></button>
           </div>
         </div>
       </div>
@@ -32,105 +34,81 @@
   </div>
 {% endfor %}
 
-  <div class="col-md-3">
+<!--Products: Side Dishes-->
+<!-- <div class="row">
+{% for item in side %}
+  <div class="col-md-2">
     <div class="card mb-2 box-shadow">
-      <img class="card-img-top"  style="height: 100px; width: 100%; display: block;" src="/static/img/sandwich_tuna_sandwich.png" data-holder-rendered="true">
+      <img class="card-img-top"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
       <div class="card-body">
-        <p class="card-text"><strong>PRODUCT NAME</strong> PRODUCT DESCRIPTION (display_desc) with apples and beverages, plus more words</p>
+        <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn" style="padding-left: 100px; color: blue"><strong>Add Item</strong></button>
+            <button class="btn class{{item.category_id}}" id="{{ item.id }}" type="button"  style="padding-left: 10px; color: blue"><strong>Add Item</strong></button>
           </div>
         </div>
       </div>
     </div>
   </div>
+{% endfor %} -->
 
-  <div class="col-md-3">
+
+<!--Products: Desserts-->
+<!-- <div class="row">
+{% for item in dessert %}
+  <div class="col-md-2">
     <div class="card mb-2 box-shadow">
-      <img class="card-img-top"  style="height: 100px; width: 100%; display: block;" src="/static/img/sandwich_tuna_sandwich.png" data-holder-rendered="true">
+      <img class="card-img-top"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
       <div class="card-body">
-        <p class="card-text"><strong>PRODUCT NAME</strong> PRODUCT DESCRIPTION (display_desc) with apples and beverages, plus more words</p>
+        <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn" style="padding-left: 100px; color: blue"><strong>Add Item</strong></button>
+            <button class="btn class{{item.category_id}}" id="{{ item.id }}" type="button"  style="padding-left: 10px; color: blue"><strong>Add Item</strong></button>
           </div>
         </div>
       </div>
     </div>
   </div>
+{% endfor %} -->
 
-  <div class="col-md-3">
+
+<!--Products: Beverage-->
+<!-- <div class="row">
+{% for item in beverage %}
+  <div class="col-md-2">
     <div class="card mb-2 box-shadow">
-      <img class="card-img-top"  style="height: 100px; width: 100%; display: block;" src="/static/img/sandwich_tuna_sandwich.png" data-holder-rendered="true">
+      <img class="card-img-top"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
       <div class="card-body">
-        <p class="card-text"><strong>PRODUCT NAME</strong> PRODUCT DESCRIPTION (display_desc) with apples and beverages, plus more words</p>
+        <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn" style="padding-left: 100px; color: blue"><strong>Add Item</strong></button>
+            <button class="btn class{{item.category_id}}" id="{{ item.id }}" type="button"  style="padding-left: 10px; color: blue"><strong>Add Item</strong></button>
           </div>
         </div>
       </div>
     </div>
   </div>
+{% endfor %} -->
 
-  <div class="col-md-3">
+<!--Products: Alcoholic Beverage-->
+<!-- <div class="row">
+{% for item in alcoholic beverage %}
+  <div class="col-md-2">
     <div class="card mb-2 box-shadow">
-      <img class="card-img-top"  style="height: 100px; width: 100%; display: block;" src="/static/img/sandwich_tuna_sandwich.png" data-holder-rendered="true">
+      <img class="card-img-top"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
       <div class="card-body">
-        <p class="card-text"><strong>PRODUCT NAME</strong> PRODUCT DESCRIPTION (display_desc) with apples and beverages, plus more words</p>
+        <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn" style="padding-left: 100px; color: blue"><strong>Add Item</strong></button>
+            <button class="btn class{{item.category_id}}" id="{{ item.id }}" type="button"  style="padding-left: 10px; color: blue"><strong>Add Item</strong></button>
           </div>
         </div>
       </div>
     </div>
   </div>
+{% endfor %} -->
 
-  <div class="col-md-3">
-    <div class="card mb-2 box-shadow">
-      <img class="card-img-top"  style="height: 100px; width: 100%; display: block;" src="/static/img/sandwich_tuna_sandwich.png" data-holder-rendered="true">
-      <div class="card-body">
-        <p class="card-text"><strong>PRODUCT NAME</strong> PRODUCT DESCRIPTION (display_desc) with apples and beverages, plus more words</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button type="button" class="btn" style="padding-left: 100px; color: blue"><strong>Add Item</strong></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-3">
-    <div class="card mb-2 box-shadow">
-      <img class="card-img-top"  style="height: 100px; width: 100%; display: block;" src="/static/img/sandwich_tuna_sandwich.png" data-holder-rendered="true">
-      <div class="card-body">
-        <p class="card-text"><strong>PRODUCT NAME</strong> PRODUCT DESCRIPTION (display_desc) with apples and beverages, plus more words</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button type="button" class="btn" style="padding-left: 100px; color: blue"><strong>Add Item</strong></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-3">
-    <div class="card mb-2 box-shadow">
-      <img class="card-img-top"  style="height: 100px; width: 100%; display: block;" src="/static/img/sandwich_tuna_sandwich.png" data-holder-rendered="true">
-      <div class="card-body">
-        <p class="card-text"><strong>PRODUCT NAME</strong> PRODUCT DESCRIPTION (display_desc) with apples and beverages, plus more words</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button type="button" class="btn" style="padding-left: 100px; color: blue"><strong>Add Item</strong></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
+ 
 
 
 <!-- please keep this, no </body> etc. -->

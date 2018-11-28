@@ -52,7 +52,6 @@ def get_products(loc_id):
         d.__dict__['category'] = d.category.name
         del d.__dict__['_sa_instance_state']
         xlist.append(d.__dict__)
-    
 
     return jsonify(xlist)
 
@@ -62,6 +61,10 @@ def menu(age_group):
     engine = db.get_engine()
     session = Session(engine)
     loc_id = 1
+
+    res = session.query(pm.Category).all()
+    for cat in res:
+        print(cat.name) 
 
     entree_cat = session.query(pm.Category)\
                 .filter(pm.Category.name == 'Entree').first()

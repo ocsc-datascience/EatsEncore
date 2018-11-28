@@ -35,3 +35,12 @@ body > .container {
 code {
   font-size: 80%;
 }
+
+
+/* For the product item images CSS
+-------------------------------------------------- */
+/* Ensures the transparent images have a white background. */
+
+/*.post img {
+  background-color: rgb(300, 300, 300);
+}*/
