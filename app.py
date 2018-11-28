@@ -59,8 +59,22 @@ def get_products(loc_id):
 @app.route("/menu/<age_group>",methods=['GET','POST'])
 def menu(age_group):
 
+    engine = db.get_engine()
+    session = Session(engine)
+    loc_id = 1
+
+    entree_cat = session.query(pm.Category)\
+                .filter(pm.Category.name == 'Entree').first()
+    
+    entrees = session.query(pm.Product).filter(pm.Product.location_id == \
+                                           int(loc_id))\
+            .filter(pm.Product.category_id == entree_cat.id).all()
+
+
+    
     if request.method == 'GET':
-        return render_template('menu_choose_items.html',age_group=age_group)
+        return render_template('menu_choose_items.html',age_group=age_group,
+                               entrees=entrees)
 
         
             
