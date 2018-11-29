@@ -150,6 +150,13 @@ xdf = xdf.drop_duplicates()
 
 # manual cleaning -- duplicate items with different prices
 # remove items id 5141, 4826
+xdf = xdf.loc[ xdf['items_id'] != 4798 ]
+xdf = xdf.loc[ xdf['items_id'] != 4762 ]
+xdf = xdf.loc[ xdf['items_id'] != 4759 ]
+xdf = xdf.loc[ xdf['items_id'] != 4770 ]
+xdf = xdf.loc[ xdf['items_id'] != 4738 ]
+xdf = xdf.loc[ xdf['items_id'] != 4785 ]
+xdf = xdf.loc[ xdf['items_id'] != 4800 ]
 xdf = xdf.loc[ xdf['items_id'] != 5141 ]
 xdf = xdf.loc[ xdf['items_id'] != 4826 ]
 xdf.loc[ xdf['items_id'] == 3275, 'items_id' ] = 3273
