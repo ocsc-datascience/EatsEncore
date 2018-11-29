@@ -68,7 +68,6 @@ def fix_product_names(xdf,df_prod):
             xdf.loc[index,'items_name'] = yy
 
         if isinstance(zz,str):
-            print(zz)
             xdf.loc[index,'item_category_type'] = zz
         
     return xdf
