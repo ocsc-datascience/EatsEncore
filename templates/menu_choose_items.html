@@ -133,6 +133,25 @@
 <!--<h4>Adult Beverages</h4> 
 	-->
 
+<script>
+	var orderCart = [];
+
+	var foodItem = function(id, name, display_desc) {
+		this.id = itemNumber
+		this.name = itemName
+		this.display_desc = itemDescription
+	};
+
+	function addItemToCart(id, name, display_desc) {
+		var foodOrder = new foodItem(id, name, display_desc);
+		orderCart.push(foodItem); 
+
+	addItemToCart ("9999", "cheesycheese", "tasty good stuff, high kcal" )
+	}
+
+	console.log(orderCart);
+	
+</script> 
 
  
 
