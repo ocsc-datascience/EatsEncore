@@ -8,8 +8,9 @@ import collections
 import product_models as pm
 
 # get hand-coded product image file
-df_img = pd.read_csv('product_image_mapping.csv')
+#df_img = pd.read_csv('product_image_mapping.csv')
 df_prod = pd.read_csv('products_charla20181128.csv')
+df_img = df_prod
 
 # get an engine
 from sqlalchemy import create_engine
