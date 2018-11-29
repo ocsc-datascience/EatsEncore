@@ -33,6 +33,19 @@ def index():
     
     return render_template("index.html",xpage="index")
 
+@app.route("/stats",methods=['GET','POST'])
+def stats():
+
+    return render_template("stats.html",xpage="stats")
+
+
+@app.route("/about",methods=['GET','POST'])
+def about():
+
+    return render_template("about.html",xpage="about")
+
+
+
 @app.route("/get_products/<loc_id>",methods=['GET'])
 def get_products(loc_id):
 
