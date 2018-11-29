@@ -41,6 +41,8 @@ code {
 -------------------------------------------------- */
 /* Ensures the transparent images have a white background. */
 
-/*.post img {
+img.food-img {
+  boder: 2px solid green;
   background-color: rgb(300, 300, 300);
-}*/
+}
+

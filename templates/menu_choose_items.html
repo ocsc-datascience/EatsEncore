@@ -26,14 +26,15 @@
 {% for item in entrees %}
   <div class="col-md-2">
     <div class="card mb-2 box-shadow">
-      <img class="card-img-top"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
-      <div class="card-body">
-        <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
+      <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
+      <div class="card-body" style ="height: 410px">
         <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button class="btn class{{item.category_id}}" id="{{ item.id }}" type="button"  style="padding-left: 10px; color: blue"><strong>Add Item</strong></button>
+          <div class="btn-group text-center">
+            <button class="btn class{{item.category_id}}" id="{{ item.id }}" type="button"  style="color: blue"><strong>Add Item</strong></button>
           </div>
         </div>
+        <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
+        
       </div>
     </div>
   </div>
