@@ -76,7 +76,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group text-center">
             <!--Charla To Do: Change btn class to btn class_side and remove the curly braces/cat_id -->
-            <button class="btn class{{item.category_id}}" id="{{ item.id }}" type="button"  style="color: blue"><strong>Add Item</strong></button>
+            <button class="btn class_entree" id="{{ item.id }}" type="button"  style="color: blue"><strong>Add Item</strong></button>
           </div>
         </div>
         <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
@@ -134,6 +134,24 @@
 	-->
 
 <script>
+
+d3.select("btn class_entree").text("Add Item");
+// User selects a menu item for their food order via Add Item link
+var addItemEntree = d3.select("#btn class_entree");
+
+/*var addItemSide = d3.select("#btn class_side");
+
+var addItemDessert = d3.select("#btn class_dessert");
+
+var addItemBeverage = d3.select("#btn class_beverage");
+
+var addItemAdultBeverage = d3.select("#btn class_adult_beverage");*/
+
+function handleClick() {
+  console.log("An item was added to the food order.");
+    // Prevent the page from refreshing
+    d3.event.preventDefault();
+
 	var orderCart = [];
 
 	var foodItem = function(id, name, display_desc) {
@@ -146,11 +164,53 @@
 		var foodOrder = new foodItem(id, name, display_desc);
 		orderCart.push(foodItem); 
 
-	addItemToCart ("9999", "cheesycheese", "tasty good stuff, high kcal" )
+	console.log(addItemToCart)
 	}
 
 	console.log(orderCart);
+
+	addItemEntree.disabled;
+
+/*	addItemSide.disabled;
+
+	addItemDessert.disabled;
+
+	addItemBeverage.disabled;
+
+	addItemAdultBeverage.disabled;*/
+
+};
+
+  
+submit.on("Go To Checkout", function() {
+
+// We can use d3 to see the object that dispatched the event
+  console.log(d3.event.target);
+});
+
+// We can use the `on` function in d3 to attach an event to the handler function
+button.on("click", handleClick);
+
+// You can also define the click handler inline
+button.on("click", function() {
+  console.log(d3.event.target);
+});
+
+// Event handlers are just normal functions that can do anything you want
+button.on("click", function() {
+  d3.select(".giphy-me").html("<img src='https://gph.to/2Krfn0w' alt='giphy'>");
+});
+
+// Input fields can trigger a change event when new text is entered.
+inputField.on("change", function() {
+  var newText = d3.event.target.value;
+  console.log(newText);
+});
+
+
 	
+
+
 </script> 
 
  
