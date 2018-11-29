@@ -32,7 +32,7 @@ def fix_price_issues(xdf):
     dups = set(dups)
     dups = list(dups)
 
-    # delete dups from data fram
+    # delete dups from data frame
     new_df.set_index('items_id',inplace=True)
     new_df.drop(dups,inplace=True)
     new_df.reset_index(drop=False,inplace=True)
@@ -98,39 +98,29 @@ def insert_items(xdf,session,loc_id):
 
 
 # two locations:
-loc1 = "Columbia Harbor House"
-loc2 = "ABC Commissary"
+loc1 = "ABC Commissary"
 
 loc = pm.Location()
 loc.name = loc1
 session.add(loc)
 
-loc = pm.Location()
-loc.name = loc2
-session.add(loc)
-
-#session.commit()
 
 #read data
 if1 = "../data/comissionary_orders.csv"
-if2 = "../data/harbor_house_orders.csv"
 
 df1 = pd.read_csv(if1)
-df2 = pd.read_csv(if2)
+#df2 = pd.read_csv(if2)
 
 #print(df1.columns)
 
-ll = list(df1['item_category_type']) + \
-     list(df2['item_category_type'])
-ll = set(ll)
-ll = list(ll)
+ll = list(df1['item_category_type'].drop_duplicates())
 ll.sort()
 
 for item in ll:
     cat = pm.Category()
     cat.name = item
     session.add(cat)
-#session.commit()
+session.commit()
 
 # work on location 1
 loc_id = 1
@@ -159,6 +149,29 @@ xdf.loc[ xdf['items_id'] == 4794, 'display_description'] =\
         "served on an Allergy-friendly Bun with Carrots, "\
         "Apple Slices and choice of Beverage"
 
+# remove duplicates
+xlist = []
+xl = [3274, 3276, 4749, 4814, 4825]
+xlist.append(xl)
+#xl = [3273, 4752, 4757, 4813, 4824]
+#xlist.append(xl)
+#xl = [2252, 2253]
+#xlist.append(xl)
+#xl = [2208, 3894, 5445]
+#xlist.append(xl)
+#xl = [2210, 4274, 4743, 4766, 4771, 4780, 4789, 4797, 4822]
+#xlist.append(xl)
+#xl = [2236, 2304]
+#xlist.append(xl)
+
+for xl in xlist:
+    for x in xl:
+        xdf.loc[ xdf['items_id'] == x, 'items_id' ] = xl[0]
+
+
+
+    
+
 xdf = xdf.drop_duplicates()
 
 # more cleaning
@@ -169,6 +182,8 @@ xdf = assign_image(xdf,df_img)
 insert_items(xdf,session,1)
 
 
+
+sys.exit()
 
 # done with location 1, ready for location 2    
 xdf = df2[ ['items_id','items_name','item_price',
