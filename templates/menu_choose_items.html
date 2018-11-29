@@ -30,6 +30,7 @@
       <div class="card-body" style ="height: 410px">
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group text-center">
+            <!--Charla To Do: Change btn class to btn class_entree and remove the curly braces/cat_id -->
             <button class="btn class{{item.category_id}}" id="{{ item.id }}" type="button"  style="color: blue"><strong>Add Item</strong></button>
           </div>
         </div>
@@ -65,7 +66,6 @@
 
 
 <!--Products: Side Dishes-->
-<br>
 <h4>Sides</h4>
 <div class="row">
 {% for item in side %}
@@ -75,6 +75,7 @@
       <div class="card-body" style ="height: 410px">
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group text-center">
+            <!--Charla To Do: Change btn class to btn class_side and remove the curly braces/cat_id -->
             <button class="btn class{{item.category_id}}" id="{{ item.id }}" type="button"  style="color: blue"><strong>Add Item</strong></button>
           </div>
         </div>

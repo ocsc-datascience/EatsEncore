@@ -89,77 +89,22 @@ def menu(age_group):
                                            int(loc_id))\
             .filter(pm.Product.category_id == entree_cat.id).all()
 
-
-    
-    if request.method == 'GET':
-        return render_template('menu_choose_items.html',age_group=age_group,
-                               entrees=entrees)
-
-
-
-
-    #Kids Call
-    # kids_cat = session.query(pm.Category)\
-    #             .filter(pm.Category.name == 'Kids').first()
-    
-    # entrees = session.query(pm.Product).filter(pm.Product.location_id == \
-    #                                        int(loc_id))\
-    #         .filter(pm.Product.category_id == entree_cat.id).all()
-
-
-    
-    # if request.method == 'GET':
-    #     return render_template('menu_choose_items.html',age_group=age_group,
-    #                            kids=kids)
-
-
-
     #Side Dishes Call
     side_cat = session.query(pm.Category)\
                 .filter(pm.Category.name == 'Side').first()
     
-    sides = session.query(pm.Product).filter(pm.Product.location_id == \
+    side = session.query(pm.Product).filter(pm.Product.location_id == \
                                            int(loc_id))\
             .filter(pm.Product.category_id == side_cat.id).all()
 
-
-    
+    #THIS IS AT BOTTOM
     if request.method == 'GET':
         return render_template('menu_choose_items.html',age_group=age_group,
-                               sides=sides)
+                               entrees=entrees,
+                               side = side)
 
 
 
-    #Desserts Call
-    # dessert_cat = session.query(pm.Category)\
-    #             .filter(pm.Category.name == 'Dessert').first()
-    
-    # desserts = session.query(pm.Product).filter(pm.Product.location_id == \
-    #                                        int(loc_id))\
-    #         .filter(pm.Product.category_id == dessert_cat.id).all()
-
-
-    
-    # if request.method == 'GET':
-    #     return render_template('menu_choose_items.html',age_group=age_group,
-    #                            desserts=desserts)
-        
-    
-
-
-    #Beverages Call
-    # bevs_cat = session.query(pm.Category)\
-    #             .filter(pm.Category.name == 'Beverage').first()
-    
-    # beverages = session.query(pm.Product).filter(pm.Product.location_id == \
-    #                                        int(loc_id))\
-    #         .filter(pm.Product.category_id == dessert_cat.id).all()
-
-
-    
-    # if request.method == 'GET':
-    #     return render_template('menu_choose_items.html',age_group=age_group,
-    #                            beverages=beverages)
         
               
             
