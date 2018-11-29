@@ -17,12 +17,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          {% if xpage == "resources" %}
+          {% if xpage == "stats" %}
           <li id="stats-link" class="nav-item active">
           {% else %}
           <li id="stats-link" class="nav-item">
           {% endif %}  
-            <a class="nav-link" href="#">Resources</a>
+            <a class="nav-link" href="/stats">Stats</a>
+          </li>
+          {% if xpage == "about" %}
+          <li id="stats-link" class="nav-item active">
+          {% else %}
+          <li id="stats-link" class="nav-item">
+          {% endif %}  
+            <a class="nav-link" href="/about">Project and Team</a>
           </li>
          </ul>
       </div>
