@@ -132,7 +132,7 @@ def menu(age_group):
         return render_template('menu_choose_items.html',age_group=age_group,
                                entrees=entrees,
                                side = side,
-                               desserts=desserts,
+                               #desserts=desserts,
                                # beverages=beverages,
                                # adultBeverages=adultBeverages,
                                )
