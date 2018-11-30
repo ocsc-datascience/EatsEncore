@@ -89,6 +89,7 @@ def menu(age_group):
                                            int(loc_id))\
             .filter(pm.Product.category_id == entree_cat.id).all()
 
+
     #Side Dishes Call
     side_cat = session.query(pm.Category)\
                 .filter(pm.Category.name == 'Side').first()
@@ -97,19 +98,44 @@ def menu(age_group):
                                            int(loc_id))\
             .filter(pm.Product.category_id == side_cat.id).all()
 
+
     #Desserts Call
-    # desserts_cat = session.query(pm.Category)\
-    #             .filter(pm.Category.name == 'Side').first()
+    desserts_cat = session.query(pm.Category)\
+                .filter(pm.Category.name == 'Desserts').first()
     
-    # desserts = session.query(pm.Product).filter(pm.Product.location_id == \
+    desserts = session.query(pm.Product).filter(pm.Product.location_id == \
+                                           int(loc_id))\
+            .filter(pm.Product.category_id == desserts_cat.id).all()
+
+
+    #Beverages Call
+    # beverages_cat = session.query(pm.Category)\
+    #             .filter(pm.Category.name == 'Beverages').first()
+    
+    # beverages = session.query(pm.Product).filter(pm.Product.location_id == \
     #                                        int(loc_id))\
-    #         .filter(pm.Product.category_id == desserts_cat.id).all()
+    #         .filter(pm.Product.category_id == beverages_cat.id).all()
+
+
+    # #Adult Boozy Beverages Call
+    # adultBeverages_cat = session.query(pm.Category)\
+    #             .filter(pm.Category.name == 'Adult_Beverages').first()
+    
+    # adultBeverages = session.query(pm.Product).filter(pm.Product.location_id == \
+    #                                        int(loc_id))\
+    #         .filter(pm.Product.category_id == adultBeverages_cat.id).all()
+
+
 
     #Request after all category calls have been made—THIS STAYS AT BOTTOM
     if request.method == 'GET':
         return render_template('menu_choose_items.html',age_group=age_group,
                                entrees=entrees,
-                               side = side,)
+                               side = side,
+                               desserts=desserts,
+                               # beverages=beverages,
+                               # adultBeverages=adultBeverages,
+                               )
 
 
 
