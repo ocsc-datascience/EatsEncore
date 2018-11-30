@@ -97,11 +97,19 @@ def menu(age_group):
                                            int(loc_id))\
             .filter(pm.Product.category_id == side_cat.id).all()
 
-    #THIS IS AT BOTTOM
+    #Desserts Call
+    # desserts_cat = session.query(pm.Category)\
+    #             .filter(pm.Category.name == 'Side').first()
+    
+    # desserts = session.query(pm.Product).filter(pm.Product.location_id == \
+    #                                        int(loc_id))\
+    #         .filter(pm.Product.category_id == desserts_cat.id).all()
+
+    #Request after all category calls have been made—THIS STAYS AT BOTTOM
     if request.method == 'GET':
         return render_template('menu_choose_items.html',age_group=age_group,
                                entrees=entrees,
-                               side = side)
+                               side = side,)
 
 
 
