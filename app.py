@@ -35,17 +35,17 @@ def index():
 
 
 # menu order cart > checkout
-@app.route("/",methods=['GET','POST'])
-def menu_choose_items():
+@app.route("/checkout",methods=['GET','POST'])
+def checkout():
 
-    form = shoppingBasket()
+    # form = shoppingBasket()
     
-    if request.method == 'POST':
-        orderCart = form.orderCart.data
-        return redirect(url_for('checkout',orderCart=orderCart))
+    # if request.method == 'POST':
+    #     orderCart = form.orderCart.data
+    #     return redirect(url_for('checkout',orderCart=orderCart))
         
     
-    return render_template("index.html",xpage="index")
+    return render_template("checkout.html",xpage="checkout")
 
 # main nav > stats
 @app.route("/stats",methods=['GET','POST'])
@@ -61,7 +61,7 @@ def about():
     return render_template("about.html",xpage="about")
 
 
-
+# menu / get products
 @app.route("/get_products/<loc_id>",methods=['GET'])
 def get_products(loc_id):
 
@@ -84,6 +84,7 @@ def get_products(loc_id):
 
     return jsonify(xlist)
 
+# filter menu by age group
 @app.route("/menu/<age_group>",methods=['GET','POST'])
 def menu(age_group):
 
@@ -116,21 +117,21 @@ def menu(age_group):
 
 
     #Desserts Call
-    # desserts_cat = session.query(pm.Category)\
-    #             .filter(pm.Category.name == 'Desserts').first()
+    dessert_cat = session.query(pm.Category)\
+                .filter(pm.Category.name == 'Dessert').first()
     
-    # desserts = session.query(pm.Product).filter(pm.Product.location_id == \
-    #                                        int(loc_id))\
-    #         .filter(pm.Product.category_id == desserts_cat.id).all()
+    dessert = session.query(pm.Product).filter(pm.Product.location_id == \
+                                           int(loc_id))\
+            .filter(pm.Product.category_id == dessert_cat.id).all()
 
 
     #Beverages Call
-    # beverages_cat = session.query(pm.Category)\
-    #             .filter(pm.Category.name == 'Beverages').first()
+    beverage_cat = session.query(pm.Category)\
+                .filter(pm.Category.name == 'Beverage').first()
     
-    # beverages = session.query(pm.Product).filter(pm.Product.location_id == \
-    #                                        int(loc_id))\
-    #         .filter(pm.Product.category_id == beverages_cat.id).all()
+    beverage = session.query(pm.Product).filter(pm.Product.location_id == \
+                                           int(loc_id))\
+            .filter(pm.Product.category_id == beverage_cat.id).all()
 
 
     # #Adult Boozy Beverages Call
@@ -148,8 +149,8 @@ def menu(age_group):
         return render_template('menu_choose_items.html',age_group=age_group,
                                entrees=entrees,
                                side = side,
-                               #desserts=desserts,
-                               # beverages=beverages,
+                               dessert=dessert,
+                               beverage=beverage,
                                # adultBeverages=adultBeverages,
                                )
 
