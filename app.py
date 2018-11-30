@@ -20,7 +20,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///db/eatsencore.sqlite"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-
+# homepage form > menu
 @app.route("/",methods=['GET','POST'])
 def index():
 
@@ -33,12 +33,28 @@ def index():
     
     return render_template("index.html",xpage="index")
 
+
+# menu order cart > checkout
+@app.route("/",methods=['GET','POST'])
+def menu_choose_items():
+
+    form = shoppingBasket()
+    
+    if request.method == 'POST':
+        orderCart = form.orderCart.data
+        return redirect(url_for('checkout',orderCart=orderCart))
+        
+    
+    return render_template("index.html",xpage="index")
+
+# main nav > stats
 @app.route("/stats",methods=['GET','POST'])
 def stats():
 
     return render_template("stats.html",xpage="stats")
 
 
+# main nav > about 
 @app.route("/about",methods=['GET','POST'])
 def about():
 
