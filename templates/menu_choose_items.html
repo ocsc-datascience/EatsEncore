@@ -135,17 +135,19 @@
 
 <script>
 
-d3.select("btn class_entree").text("Add Item");
+
 // User selects a menu item for their food order via Add Item link
-var addItemEntree = d3.select("#btn class_entree");
+var addItemEntree = d3.select("btn class_entree").text("Add Item");
 
-/*var addItemSide = d3.select("#btn class_side");
+/* Other categories ....
+var addItemSide = d3.select("#btn class_side");.text("Add Item");
 
-var addItemDessert = d3.select("#btn class_dessert");
+var addItemDessert = d3.select("#btn class_dessert");.text("Add Item");
 
-var addItemBeverage = d3.select("#btn class_beverage");
+var addItemBeverage = d3.select("#btn class_beverage");.text("Add Item");
 
-var addItemAdultBeverage = d3.select("#btn class_adult_beverage");*/
+var addItemAdultBeverage = d3.select("#btn class_adult_beverage");.text("Add Item");
+*/
 
 function handleClick() {
   console.log("An item was added to the food order.");
@@ -160,12 +162,18 @@ function handleClick() {
 		this.display_desc = itemDescription
 	};
 
+
 	function addItemToCart(id, name, display_desc) {
 		var foodOrder = new foodItem(id, name, display_desc);
 		orderCart.push(foodItem); 
 
 	console.log(addItemToCart)
 	}
+
+	d3.selectAll("btn class_entree").on('click', function()
+		{	
+			d3.select(this).style("grey");
+		});
 
 	console.log(orderCart);
 
@@ -181,25 +189,15 @@ function handleClick() {
 
 };
 
-  
-submit.on("Go To Checkout", function() {
-
-// We can use d3 to see the object that dispatched the event
+//Submit entire food order 
+submit.on("btn btn-primary ", function() {
   console.log(d3.event.target);
 });
 
-// We can use the `on` function in d3 to attach an event to the handler function
+// Use the `on` function in d3 to attach an event to the handler function
 button.on("click", handleClick);
 
-// You can also define the click handler inline
-button.on("click", function() {
-  console.log(d3.event.target);
-});
-
-// Event handlers are just normal functions that can do anything you want
-button.on("click", function() {
-  d3.select(".giphy-me").html("<img src='https://gph.to/2Krfn0w' alt='giphy'>");
-});
+  d3.select(" ").html;
 
 // Input fields can trigger a change event when new text is entered.
 inputField.on("change", function() {
