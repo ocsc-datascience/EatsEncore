@@ -2,13 +2,47 @@
 {% block content %}
 <!-- your code start -->
 
-    <div class="row">
-      <div class="col-md-12 text-left mt-3">
-        <h1>PROJECT AND TEAM</h1>
+  <div class="row">
+    <div class="col-xs-3 col-lg-6 " style="padding-left: 25px; padding-right:25px; border-right: 1px solid #ccc">
+        <h1>Recommendation Engine Project / Development Team</h1>
         <BR>
-        <BR>
+        <h1>Project Overview</h1>
+        <p>EatsEncore provides recommendations that will enhance a meal at a given restaurant. This machine learning recommendation engine utilizes proprietary order data from two different restaurants inside a large entertainment venue. In making the recommendations, aside from selected items, the only other thing we will know about a customer is their age--this is so that the app recommends only age-appropriate items, such alcoholic beverages for adults or kids menu items for children. If deployed in the real-world, the goal is to increase sales by recommending popular item pairings that align with food selections.</p>
+
+        <h2>Data Source & Project Details</h2>
+        <p>We obtained the data through one of our team members worked with roughly 14,000 individual orders per restaurant--and each order having a near-average of 5 items. There are approximately 90 item SKUs (per restaurant) for the categories: entrees, sides, desserts, beverage, adult beverages, and kids menu.<BR>
+
+        Our project utilizes a market basket analysis via the “Apriori” algorithm to make item recommendations based on association analysis of previous purchases. We employ pre-filtering to handle edge cases in orders (e.g., two entrees) in the data engineering and preparation stage. We will also employ additional business logic to filter recommendations based on user inputs. For example, we will not recommend alcoholic beverages to customers under 21 years of age.<BR>
+
+        The back-end is complemented by a HTML/Bootstrap/JavaScript front-end that models a real-world online restaurant purchase system.Deploying on Heroku, using Python/Flask and SQLite3. The machine learning code is driven by Python, Pandas, and apyori.</p>
+
+        <h2>Investigative Questions</h2>
+        <UL>
+          <LI>Given a meal order with items {A,B, ...}, what is the most likely item {X} that the customer will want to buy/eat?</LI>
+          <LI>What are the most and least popular menu items and item combinations?</LI>
+          <LI>What are the distributions of order sizes and are there interesting trends of frequent item combinations (e.g., if people are ordering beer with dessert)?</LI>
+          <LI>Are there interesting trends that can be seen separating Lunch and Dinner orders (i.e., time of day)?</LI>
+        </UL>
+
+      <div class="col-xs-3-6 col-lg-6 ">
+        <h1>Meet the team</h1>
+<!--           <div class="album py-5 bg-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow"> -->
+                    <img class="card-img-top" src="static/img/CharlaMyers.jpg" style="height: 200px; width: 200px; display: block;">
+<!--                     <div class="card-body">
+                      <p class="card-text"> -->
+                        <h2>Eric Jung</h2>
+                          <p>A digital product manager who focuses on data analytics & strategy. Eric loves building products that enhance the magic of a customer's experience with data-driven insights. Plus, he loves all things Disney.</p>
+                        <BR>
+                        <h2>Charla Myers</h2>
+                        <p>A content-focused creative director, Charla sees data as a reflection of human behavior. Her goal is to combine her skills for creative development and user experience with analytics to become a data storyteller. And she's lived in 6 major American cities.</p>
+                        <BR>
+                        <h2>Christian Ott</h2>
+                        <p>A computational/data scientist with a PhD in Theoretical Astrophysics and 15+ years of experience in scientific computing and data analysis, Christian has a strong understanding of mathematics, numerical methods, and statistics. Additionally he loves cats!</p>
       </div>
-    </div>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

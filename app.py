@@ -100,12 +100,12 @@ def menu(age_group):
 
 
     #Desserts Call
-    desserts_cat = session.query(pm.Category)\
-                .filter(pm.Category.name == 'Desserts').first()
+    # desserts_cat = session.query(pm.Category)\
+    #             .filter(pm.Category.name == 'Desserts').first()
     
-    desserts = session.query(pm.Product).filter(pm.Product.location_id == \
-                                           int(loc_id))\
-            .filter(pm.Product.category_id == desserts_cat.id).all()
+    # desserts = session.query(pm.Product).filter(pm.Product.location_id == \
+    #                                        int(loc_id))\
+    #         .filter(pm.Product.category_id == desserts_cat.id).all()
 
 
     #Beverages Call
