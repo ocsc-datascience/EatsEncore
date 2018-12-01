@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import sys
+import json
 from flask import Flask,render_template,jsonify,request,Response,url_for,\
     redirect
 from flask_cors import CORS
@@ -42,7 +43,12 @@ def index():
 @app.route("/checkout",methods=['GET','POST'])
 def checkout():
 
-    # form = shoppingBasket()
+    form = MenuForm()   
+
+    if request.method == 'POST':
+        selections = json.loads(form.selections.data)
+        print(selections)
+
     
     # if request.method == 'POST':
     #     orderCart = form.orderCart.data

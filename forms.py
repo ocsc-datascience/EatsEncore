@@ -5,5 +5,8 @@ from wtforms import TextField, IntegerField, TextAreaField, \
 class LandingPageForm(FlaskForm):
     age_group = SelectField("Age Group", choices = [], validators = [])
 
+class MenuForm(FlaskForm):
+    selections = TextField("selections", validators = [])
+
 
 

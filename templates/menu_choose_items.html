@@ -13,11 +13,14 @@
       </p>
         <a href="#Entrées">Entrées</a> | <a href="#Sides">Sides</a> | <a href="#Desserts">Desserts</a> | <a href="#Beverages">Beverages</a>  | <a href="#">Adult Beverages</a> | <a href="#Kids">Kids</a>
        <p></p>
+       <form id="orderform" method="POST" action="/checkout">
+        <input type="hidden" id="selections" name="selections" value="{}">
         <div class="form-row" style="float: right;">
           <div class="form-group col-md-2">
-            <button type="submit" id="submit" class="btn btn-primary">Go To Checkout</button>
+            <button id="mysubmit" class="btn btn-primary">Go To Checkout</button>
           </div>
         </div>
+        </form>
     </div>
         <br>
         <br>
@@ -318,60 +321,20 @@ d3.selectAll(".class_kids").on('click', function()
       d3.selectAll('.class_kids').remove();
     });
 
-
-  submit.on("#submit", function () {
-    console.log("Hi!");
-  });
-
-
-/*var orderCart = orderCart.getElementsByClassName(".class_entree .class_side .class_dessert .class_beverage .class_kids")
-
-
-
-
-function handleClick() {
-  console.log("beginning of handleClick function");
-    // Prevent the page from refreshing
-    d3.event.preventDefault();
-
-	var orderCart = [];
-
-	var foodItem = function(id, name, display_desc) {
-		this.id = itemNumber
-		this.name = itemName
-		this.display_desc = itemDescription
-	};
-
-
-	function addItemToCart(id, name, display_desc) {
-		var foodOrder = new foodItem(id, name, display_desc);
-		orderCart.push(foodItem); 
-
-	}
-*/
-	
-
-
-/*
-
-//Submit entire food order 
-submit.on("btn btn-primary ", function() {
-  console.log(d3.event.target);
-});
-
-// Use the `on` function in d3 to attach an event to the handler function
-button.on("click", handleClick);
-
-  d3.select(" ").html;
-
-// Input fields can trigger a change event when new text is entered.
-inputField.on("change", function() {
-  var newText = d3.event.target.value;
-  console.log(newText);
-});
-
-*/
-	
+  d3.select("#mysubmit")
+      .on("click", function () {
+        d3.event.stopPropagation();
+        d3.event.preventDefault();
+        console.log("Hi!");
+        console.log(selections);
+        if (jQuery.isEmptyObject(selections)) {
+          alert("Please select at least one item!");
+        } else {
+          d3.select("#selections").attr("value", JSON.stringify(selections));
+          var form = d3.select("#orderform").node();
+          form.submit();
+        }
+      });
 
 
 </script> 
