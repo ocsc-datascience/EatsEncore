@@ -14,7 +14,13 @@
         {% if age_group == "0" %}
         <a href="#Kids">Kids</a> | 
         {% endif %}    
-        <a href="#Entrées">Entrées</a> | <a href="#Sides">Sides</a> | <a href="#Desserts">Desserts</a> | <a href="#Beverages">Beverages</a>  | <a href="#">Adult Beverages</a>  
+        <a href="#Entrées">Entrées</a> | 
+        <a href="#Sides">Sides</a> | 
+        <a href="#Desserts">Desserts</a> | 
+        <a href="#Beverages">Beverages</a>  | 
+        {% if age_group == "2" %}
+        <a href="#">Adult Beverages</a>  
+        {% endif %}    
        <p></p>
        <form id="orderform" method="POST" action="/checkout">
         <input type="hidden" id="selections" name="selections" value="{}">
@@ -33,6 +39,7 @@
 
 
 <!--Products: Kids-->
+{% if age_group == "0" %}
 <a name="Kids"></a><h4>Kids</h4>
 <div class="row">
 {% for item in kids %}
@@ -52,6 +59,7 @@
   </div>
 {% endfor %}
 </div>
+{% endif %}  
 
 
 <!--Products: Entrees-->
@@ -148,7 +156,8 @@
 
 
 
-<!--Products: Alcoholic Adult Beverages ... only shows for User = 2 (i.e., age 21+) | FYI: this code BREAKS ... need to confirm/adjust official category name -->
+<!--Products: Alcoholic Adult Beverages -->
+{% if age_group == "2" %}
 <a name="Adult Beverages"></a><h4>Adult Beverages</h4>
 <div class="row">
 {% for item in alcoholicBeverage %}
@@ -167,6 +176,7 @@
     </div>
   </div>
 {% endfor %}
+{% endif %}  
 
 
 
