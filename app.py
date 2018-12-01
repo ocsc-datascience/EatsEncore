@@ -135,12 +135,22 @@ def menu(age_group):
 
 
     # #Adult Boozy Beverages Call
-    # adultBeverages_cat = session.query(pm.Category)\
-    #             .filter(pm.Category.name == 'Adult_Beverages').first()
+    # alcoholicBeverage_cat = session.query(pm.Category)\
+    #             .filter(pm.Category.name == 'alcoholicBeverage').first()
     
-    # adultBeverages = session.query(pm.Product).filter(pm.Product.location_id == \
+    # alcoholic_Beverage = session.query(pm.Product).filter(pm.Product.location_id == \
     #                                        int(loc_id))\
-    #         .filter(pm.Product.category_id == adultBeverages_cat.id).all()
+    #         .filter(pm.Product.category_id == alcoholicBeverage_cat.id).all()
+
+
+
+    #Beverages Call
+    kids_cat = session.query(pm.Category)\
+                .filter(pm.Category.name == 'Kids').first()
+    
+    kids = session.query(pm.Product).filter(pm.Product.location_id == \
+                                           int(loc_id))\
+            .filter(pm.Product.category_id == kids_cat.id).all()
 
 
 
@@ -151,7 +161,8 @@ def menu(age_group):
                                side = side,
                                dessert=dessert,
                                beverage=beverage,
-                               # adultBeverages=adultBeverages,
+                               #alcoholicBeverage=alcoholicBeverage,
+                               kids=kids
                                )
 
 
