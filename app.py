@@ -20,6 +20,10 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///db/eatsencore.sqlite"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
+engine = db.get_engine()
+session = Session(engine)
+
+
 # homepage form > menu
 @app.route("/",methods=['GET','POST'])
 def index():
@@ -65,8 +69,6 @@ def about():
 @app.route("/get_products/<loc_id>",methods=['GET'])
 def get_products(loc_id):
 
-    engine = db.get_engine()
-    session = Session(engine)
     
     try:
         lid = int(loc_id)
@@ -88,8 +90,6 @@ def get_products(loc_id):
 @app.route("/menu/<age_group>",methods=['GET','POST'])
 def menu(age_group):
 
-    engine = db.get_engine()
-    session = Session(engine)
     loc_id = 1
 
     res = session.query(pm.Category).all()
