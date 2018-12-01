@@ -13,13 +13,11 @@
       </p>
         <a href="#Entrées">Entrées</a> | <a href="#Sides">Sides</a> | <a href="#Desserts">Desserts</a> | <a href="#Beverages">Beverages</a>  | <a href="#">Adult Beverages</a> | <a href="#Kids">Kids</a>
        <p></p>
-       <form method="POST">    
         <div class="form-row" style="float: right;">
           <div class="form-group col-md-2">
-            <button type="submit" class="btn btn-primary">Go To Checkout</button>
+            <button type="submit" id="submit" class="btn btn-primary">Go To Checkout</button>
           </div>
         </div>
-      </form>
     </div>
         <br>
         <br>
@@ -321,8 +319,14 @@ d3.selectAll(".class_kids").on('click', function()
     });
 
 
+  submit.on("#submit", function () {
+    console.log("Hi!");
+  });
+
 
 /*var orderCart = orderCart.getElementsByClassName(".class_entree .class_side .class_dessert .class_beverage .class_kids")
+
+
 
 
 function handleClick() {
