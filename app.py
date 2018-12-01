@@ -182,12 +182,12 @@ def menu(age_group):
 
 
     # #Adult Boozy Beverages Call
-    # alcoholicBeverage_cat = session.query(pm.Category)\
-    #             .filter(pm.Category.name == 'alcoholicBeverage').first()
+    alcoholicBeverage_cat = session.query(pm.Category)\
+                 .filter(pm.Category.name == 'Alcoholic Beverage').first()
     
-    # alcoholic_Beverage = session.query(pm.Product).filter(pm.Product.location_id == \
-    #                                        int(loc_id))\
-    #         .filter(pm.Product.category_id == alcoholicBeverage_cat.id).all()
+    alcoholicBeverage = session.query(pm.Product).filter(pm.Product.location_id == \
+                                            int(loc_id))\
+             .filter(pm.Product.category_id == alcoholicBeverage_cat.id).all()
 
 
 
@@ -208,7 +208,7 @@ def menu(age_group):
                                side = side,
                                dessert=dessert,
                                beverage=beverage,
-                               #alcoholicBeverage=alcoholicBeverage,
+                               alcoholicBeverage=alcoholicBeverage,
                                kids=kids
                                )
 

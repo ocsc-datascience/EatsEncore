@@ -12,10 +12,10 @@ def recommend(order,age_group):
 
     reco = []
     base_cats = ['side','dessert','beverage']
-    if age_group == 0:
+    if age_group == "0":
         cats = ['kids']
         cats += base_cats
-    elif age_group == 1:
+    elif age_group == "1":
           cats = ['entree']
           cats += base_cats
     else:
