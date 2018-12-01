@@ -15,6 +15,7 @@
        <p></p>
        <form id="orderform" method="POST" action="/checkout">
         <input type="hidden" id="selections" name="selections" value="{}">
+        <input type="hidden" id="age_group" name="age_group" value={{ age_group }}>
         <div class="form-row" style="float: right;">
           <div class="form-group col-md-2">
             <button id="mysubmit" class="btn btn-primary">Go To Checkout</button>
@@ -104,7 +105,7 @@
       <div class="card-body" style ="height: 410px">
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group text-center">
-            <button class="btn class_beverage id="{{ item.id }}" name="{{item.name}}" description="{{ item.display_desc }}" img="{{item.img}}" type="button"  style="color: blue"><strong>Add Item</strong></button>
+            <button class="btn class_beverage" id="{{ item.id }}" name="{{item.name}}" description="{{ item.display_desc }}" img="{{item.img}}" type="button"  style="color: blue"><strong>Add Item</strong></button>
           </div>
         </div>
         <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
@@ -260,7 +261,6 @@ d3.selectAll(".class_beverage").on('click', function()
       var description = d3.select(this).attr("description")
       console.log(description)
 
-
       var img = d3.select(this).attr("img")
       console.log(img)
 
@@ -276,7 +276,7 @@ d3.selectAll(".class_beverage").on('click', function()
       var id = d3.select(this).attr("id")
       console.log(id)
 
-      selections['alcoholicBeverage'] = id;
+      selections['alcohol'] = id;
       console.log(selections);
 
       var name = d3.select(this).attr("name")

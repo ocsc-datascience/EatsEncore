@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 import json
+import collections
 from flask import Flask,render_template,jsonify,request,Response,url_for,\
     redirect
 from flask_cors import CORS
@@ -30,7 +31,7 @@ session = Session(engine)
 def index():
 
     form = LandingPageForm()
-    
+     
     if request.method == 'POST':
         age_group = form.age_group.data
         return redirect(url_for('menu',age_group=age_group))
@@ -45,17 +46,57 @@ def checkout():
 
     form = MenuForm()   
 
-    if request.method == 'POST':
-        selections = json.loads(form.selections.data)
-        print(selections)
+    if request.method == 'GET':
+        return redirect(url_for('index'))
 
     
-    # if request.method == 'POST':
-    #     orderCart = form.orderCart.data
-    #     return redirect(url_for('checkout',orderCart=orderCart))
+    if request.method == 'POST':
+        selections = json.loads(form.selections.data)
+        age_group = form.age_group.data
         
-    
-    return render_template("checkout.html",xpage="checkout")
+        print(age_group)
+        print(selections)
+
+        order = collections.OrderedDict()
+        order['entree'] = {}
+        order['kids'] = {}
+        order['side'] = {}
+        order['dessert'] = {}
+        order['beverage'] = {}
+        order['alcohol'] = {}
+
+        ordercats = []
+        for key in order.keys():
+        
+            if key in selections.keys():
+                ordercats.append(key)
+                res = session.query(pm.Product).filter(pm.Product.id == \
+                                              int(selections[key])).first()
+
+                order[key]['img'] = res.img
+                order[key]['name'] = res.name
+                order[key]['display_desc'] = res.name
+
+        
+        recos = logic.recommend(order,age_group)
+        recommendations = []
+        for rec in recos:
+            md = {}
+            res = session.query(pm.Product).filter(pm.Product.id == \
+                                                   rec).first()
+
+            md['id'] = rec
+            md['img'] = res.img
+            md['name'] = res.name
+            md['display_desc'] = res.name
+            
+            recommendations.append(md)
+            
+        print(recommendations)
+            
+    return render_template("checkout.html",xpage="checkout",
+                           order=order,ordercats=ordercats,
+                           recommendations=recommendations)
 
 # main nav > stats
 @app.route("/stats",methods=['GET','POST'])

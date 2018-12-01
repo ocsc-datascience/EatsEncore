@@ -16,15 +16,15 @@
 </div>
 
 
-{% for item in orderCart %}
+{% for key in ordercats %}
   <div class="col-md-2">
     <div class="card mb-2 box-shadow">
-      <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
+      <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ order[key].img }}" data-holder-rendered="true">
       <div class="card-body" style ="height: 410px">
         <div class="d-flex justify-content-between align-items-center">
           
         </div>
-        <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
+        <p class="card-text"><strong>{{ order[key].name }}</strong> {{ order[key].display_desc }}</p>
         
       </div>
     </div>
@@ -38,7 +38,7 @@
 <h3>Enhance Your Meal</h3>
 <BR>
 
-{% for item in foodRecommendation %}
+{% for item in recommendations %}
   <div class="col-md-2">
     <div class="card mb-2 box-shadow">
       <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">

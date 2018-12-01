@@ -159,6 +159,8 @@ xdf = xdf.loc[ xdf['items_id'] != 4785 ]
 xdf = xdf.loc[ xdf['items_id'] != 4800 ]
 xdf = xdf.loc[ xdf['items_id'] != 5141 ]
 xdf = xdf.loc[ xdf['items_id'] != 4826 ]
+
+xdf.loc[ xdf['items_id'] == 2253, 'items_id' ] = 2252
 xdf.loc[ xdf['items_id'] == 3275, 'items_id' ] = 3273
 xdf.loc[ xdf['items_id'] == 3273, 'items_name' ] =\
                 "Smucker's® Uncrustables® Sandwich"

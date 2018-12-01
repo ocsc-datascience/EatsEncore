@@ -1,0 +1,216 @@
+id,name,display_desc,category,location,img,name_short,category_corrected
+1813,French Fries,,Side,ABC Commissary,fries_french_fries.png,,
+1818,Dannon® Greek Yogurt,Light and Fit Strawberry,Dessert,ABC Commissary,Dannon_Greek_LnF_Strawberry.png,Dannon Greek Yogurt,
+1819,Vegetarian Chili,,Side,ABC Commissary,chile_vegetarian.jpg,,
+1820,New England Clam Chowder,,Side,ABC Commissary,soup_NE_clam_chowder.png,Clam Chowder,
+1822,Grilled Salmon,served with Vegetable Rice and Green Beans and Carrots,Entree,ABC Commissary,salmon_grilled_salmon_green_beans.jpg,,
+1823,Lobster Roll,served with House-made Potato Chips,Entree,ABC Commissary,sandwich_LobsterRoll.png,,
+1827,odwalla® Lemonade Slushy,featuring odwalla® Lemonade,Beverage,ABC Commissary,bev_odwalla_lemonade_slushy.png,Lemonade Slushy,
+1828,Seasonal Peach Cobbler,drizzled with Vanilla Sauce,Dessert,ABC Commissary,dessert_peach-cobbler.jpg,Peach Cobbler,
+1829,Chicken Breast Nuggets and Fish,served with choice of Sides and Beverage,Kids,ABC Commissary,fried_Chicken-and-Fish.png,Kids Chicken Nuggets & Fish,Kids
+1832,Chicken Pot Pie,served with Green Beans and Carrots,Entree,ABC Commissary,Chicken-Pot-Pie.png,,
+1838,Green Beans & Carrots,,Side,ABC Commissary,veg_green_beans_carrots.jpg,,
+1839,Boston Cream Pie,,Dessert,ABC Commissary,dessert_boston-cream-pie.jpg,,
+1841,Trio Platter,"a combination of Fried Shrimp, Battered Fish and Breaded Chicken Breast Nuggets served with Hushpuppies and a choice of Side",Entree,ABC Commissary,fried_shrimp_fish_chicken.png,,
+1847,Chicken Breast Nuggets,served with choice of two Sides and a Beverage,Kids,ABC Commissary,fried_chicken_nuggets.png,Kids Chicken Nuggets,
+1848,Macaroni & Cheese,served with choice of two Sides and a Beverage,Kids,ABC Commissary,mac-n-cheese.png,Kids Mac & Cheese,
+1849,Garden Salad with Chicken,served with two Sides and your choice of Beverage,Kids,ABC Commissary,salad_garden_salad_with_chicken.png,Kids Chicken Garden Salad,
+1850,Tuna Sandwich,served with two Sides and your choice of Beverage,Kids,ABC Commissary,sandwich_tuna_sandwich.png,Kids Tuna Sandwich,
+1851,Smuckers® Uncrustables®,served with two Sides and your choice of Beverage,Kids,ABC Commissary,Smuckers_Uncrustables.jpg,Smuckers Uncrustables,
+1852,Dasani® Bottled Water,,Beverage,ABC Commissary,bev_dasani.jpg,Bottled Water,
+1853,Nestlé® Hot Cocoa,,Beverage,ABC Commissary,bev_hot-chocolate.jpeg,Hot Cocoa,
+1854,Hot Tea,,Beverage,ABC Commissary,bev_hot_tea.jpg,,
+1855,Nestlé® Nesquik® Chocolate Milk,,Beverage,ABC Commissary,bev_choclate-milk.jpg,Chocolate Milk,
+1856,Lowfat Milk,,Beverage,ABC Commissary,bev_milk.jpeg,,
+1857,Simply Orange® Orange Juice,,Beverage,ABC Commissary,bev_orange_juice.jpeg,Orange Juice,
+1858,Assorted Fountain Beverages - Regular,Assorted Coca-Cola® Offerings,Beverage,ABC Commissary,bev_fountain_beverages.jpeg,Fountain Beverage,
+2205,French Fries,,Side,Columbia Harbor House,fries_french_fries.png,,
+2207,No Sugar Added Strawberry Parfait,,Dessert,Columbia Harbor House,dessert_strawberry_parfait.jpeg,Strawberry Parfait,
+2208,Chocolate Mousse,,Dessert,Columbia Harbor House,dessert_chocolate_mousse.png,Chocolate Mousse,
+2210,1/3 lb Angus Bacon Cheeseburger,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,burger_angus_bacon_cheeseburger.jpeg,,
+2218,Strawberry Lemonade Slushy,featuring odwalla®,Beverage,Columbia Harbor House,bev_strawberry_lemonade_slush.jpeg,,
+2221,Steak Fries,,Side,Columbia Harbor House,fries-transparent-steak.png,,
+2222,Fire-roasted Corn Medley,,Side,Columbia Harbor House,veg_corn_medley.png,,
+2234,Hummus and Flatbread,Hummus served with Flatbread,Side,Columbia Harbor House,hummus-flatbread.jpg,,
+2236,Mediterranean Salad,Mediterranean Salad,Entree,Columbia Harbor House,salad_mediterranean-salad.png,,
+2237,Mediterranean Salad with Chicken,tossed in a Mediterranean Vinaigrette and served with Hummus and Flatbread,Entree,Columbia Harbor House,salad_mediterranean_salad_chicken.png,Chicken Mediterranean Salad,
+2238,Chicken Club,"served with Coleslaw and choice of Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,sandwich_chicken_club.jpg,,
+2243,Cheeseburger,served with choice of Sides and Beverage,Kids,Columbia Harbor House,burger_cheeseburger.jpeg,Kids Cheeseburger,
+2244,Carved Turkey Sandwich,served with choice of Sides and Beverage,Kids,Columbia Harbor House,sandwich_turkey_sandwich.png,Kids Turkey Sandwich,
+2245,Olaf Cupcake,Chocolate Cupcake,Dessert,Columbia Harbor House,dessert_chocolate_cupcake.jpeg,Olaf Chocolate Cupcake,
+2246,Dasani® Bottled Water,,Beverage,Columbia Harbor House,bev_dasani.jpg,Bottled Water,
+2248,Hot Tea,,Beverage,Columbia Harbor House,bev_hot_tea.jpg,,
+2249,Nestlé® Nesquik® Chocolate Milk,,Beverage,Columbia Harbor House,bev_choclate-milk.jpg,Chocolate Milk,
+2250,Lowfat Milk,,Beverage,Columbia Harbor House,bev_milk.jpeg,,
+2251,smartwater®,,Beverage,Columbia Harbor House,bev_smartwater.jpeg,smartwater,
+2252,Assorted Fountain Beverages - Regular,Assorted Coca-Cola® Offerings,Beverage,Columbia Harbor House,bev_fountain_beverages.jpeg,Fountain Beverage,
+2253,Assorted Fountain Beverages - Large,Assorted Coca-Cola® Offerings,Beverage,Columbia Harbor House,bev_fountain_beverages.jpeg,Fountain Beverage,
+2255,Bud Light,,Alcoholic Beverage,Columbia Harbor House,bev_Bud_Light-logo.png,,
+2256,Yuengling,,Alcoholic Beverage,Columbia Harbor House,bev_yuengling_logo.png,,
+2257,Beso Del Sol Sangria,,Alcoholic Beverage,Columbia Harbor House,bev_beso_del_sol_sangria.png,,
+2293,Woodbridge by Robert Mondavi Chardonnay,,Alcoholic Beverage,Columbia Harbor House,bev_woodbridge.jpeg,Woodbridge Chardonnay,
+2294,Woodbridge by Robert Mondavi Cabernet Sauvignon,,Alcoholic Beverage,Columbia Harbor House,bev_woodbridge.jpeg,Woodbridge Cabernet,
+2303,Mediterranean Salad with Chicken,tossed in a Mediterranean Vinaigrette and served with Hummus and Flatbread,Entree,Columbia Harbor House,salad_mediterranean_salad_chicken.png,Chicken Mediterranean Salad,
+2304,Mediterranean Salad,Mediterranean Salad,Entree,Columbia Harbor House,salad_mediterranean-salad.png,,
+2307,1/3 lb Angus Cheeseburger,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,burger_cheeseburger.jpeg,,
+2716,Chicken Breast Strips,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,fried_chicken-strips.png,Chicken Strips,
+3020,Chicken Strips,served with choice of Sides and Beverage,Kids,Columbia Harbor House,fried_chicken-strips.png,Kids Chicken Strips,
+3036,Shrimp Platter,served with Steak Fries and Coleslaw,Entree,Columbia Harbor House,fried_shrimp.png,,
+3037,Fish and Shrimp Platter,served with Steak Fries and Coleslaw,Entree,Columbia Harbor House,fried_seafood_platter_fish_shrimp.png,Fish & Shrimp Platter,
+3038,"Shrimp, Fish and Chicken Platter",served with Steak Fries and Coleslaw,Entree,Columbia Harbor House,fried_shrimp_fish_chicken.png,"Shrimp, Fish, & Chicken Platter",
+3039,Happy Daze,"Parrot Bat Coconut Rum, Melon Liqueur, Banana Liqueur and Grenadine with Orange and Pineapple Juice",Alcoholic Beverage,Columbia Harbor House,bev_cocktails.png,,
+3069,Regular Coffee,,Beverage,ABC Commissary,bev_coffee.jpg,,
+3070,Decaf Coffee,,Beverage,ABC Commissary,bev_coffee.jpg,,
+3123,Regular Coffee,,Beverage,Columbia Harbor House,bev_coffee.jpg,,
+3124,Decaf Coffee,,Beverage,Columbia Harbor House,bev_coffee.jpg,,
+3166,Macaroni & Cheese,,Side,ABC Commissary,mac-n-cheese.png,Mac & Cheese,
+3167,Tuna Sandwich,served with House-made Potato Chips,Entree,ABC Commissary,sandwich_tuna_sandwich.png,,
+3168,Shrimp & Fish Combo,served with Hushpuppies and a choice of Side,Entree,ABC Commissary,fried_shrimp_fish_chicken.png,,
+3170,Chicken Breast Nuggets & Fish Combo,served with Hushpuppies and a choice of Side,Entree,ABC Commissary,fried_Chicken-and-Fish.png,Chicken Nuggets & Fish,
+3171,Chicken Breast Nuggets (8 piece),served with choice of Side,Entree,ABC Commissary,fried_chicken_nuggets.png,Chicken Nuggets  ,
+3236,Toy Story Land Cupcake,Celebrate the opening of Toy Story Land with this Chocolate Cupcake topped with Vanilla Buttercream,Dessert,Columbia Harbor House,dessert_chocolate_cupcake.jpeg, ,
+3265,Vegan Burger,served with French Fries,Entree,Columbia Harbor House,burger_vegan.png,,
+3273,Smucker's® Uncrustables® Sandwich,"served with Carrot Sticks, Apple Slices and choice of Beverage",Kids,Columbia Harbor House,Smuckers_Uncrustables.jpg,Smuckers Uncrustables,
+3274,Mac & Cheese,"served with Carrot Sticks, Apple Slices and choice of Beverage",Kids,Columbia Harbor House,mac-n-cheese.png,Kids Mac & Cheese,
+3276,Mac & Cheese,"served with Carrot Sticks, Apple Slices and choice of Beverage",Kids,Columbia Harbor House,mac-n-cheese.png,Kids Mac & Cheese,
+3285,Southwest BBQ Burger,served with Signature Southwestern Steak Fries dusted in Chili-lime Seasoning,Entree,Columbia Harbor House,burger_southwest_BBQ.jpg,,
+3287,Vegan Burger,served with French Fries,Entree,Columbia Harbor House,burger_vegan.png,,
+3288,BBQ Rib Platter,"served with Coleslaw, Pickles and Steak Fries",Entree,Columbia Harbor House,Ribs.png,,
+3289,Southwestern Steak Fries,topped with Chipotle Aïoli and Queso Fresco,Side,Columbia Harbor House,fries_southwest_steak.jpg,,
+3370,Braised Beef and Enchilada,served with a Roasted Corn and Cheese Enchilada,Entree,Columbia Harbor House,mex_beef_enchiladas.jpeg,,
+3371,BBQ Quesadilla,"served with Steak Fries, Roasted Corn and choice of Beverage",Kids,Columbia Harbor House,mex_quesadilla.png,Kids BBQ Quesadilla,
+3389,Shrimp Teriyaki Bowl,Stir-fried Shrimp and Vegetables tossed in a House-made Teriyaki Sauce,Entree,Columbia Harbor House,asian_shrimp-terriyaki_bowl.jpg,,
+3390,Teriyaki Vegetable Bowl,Stir-fried Vegetables tossed in a House-made Teriyaki Sauce,Entree,Columbia Harbor House,asian_Vegetable-Teriyaki-Bowl.png,,
+3407,Green Beans,,Side,Columbia Harbor House,veg_green_beans_carrots.jpg,,
+3408,Chocolate Banana Cream Almond Crisp,,Dessert,Columbia Harbor House,dessert_chocolate_banana_almond.jpg,Chocolate Banana Almond Crisp,
+3410,Olaf Cupcake,Chocolate Cupcake,Dessert,Columbia Harbor House,dessert_chocolate_cupcake.jpeg,Olaf Chocolate Cupcake,
+3411,Toy Story Land Cupcake,Celebrate the opening of Toy Story Land with this Chocolate Cupcake topped with Vanilla Buttercream,Dessert,Columbia Harbor House,dessert_chocolate_cupcake.jpeg, ,
+3590,Lighthouse Sandwich,served with House-made Potato Chips,Entree,ABC Commissary,sandwich_lighthouse_hummus.jpeg,,
+3591,Hushpuppies,,Side,ABC Commissary,fried_hushpuppies.jpeg,,
+3592,Vegetable Rice,,Side,ABC Commissary,veg_veggie_rice.jpg,,
+3593,Harbour Salad with Chicken,drizzled with Zinfandel Vinaigrette Dressing,Entree,ABC Commissary,salad_garden_salad_with_chicken.png,Chicken Harbour Salad,
+3594,Harbour Salad with Shrimp,drizzled with Zinfandel Vinaigrette Dressing,Entree,ABC Commissary,salad_shrimp.jpg,Shrimp Harbour Salad,
+3595,Harbour Salad,drizzled with Zinfandel Vinaigrette Dressing,Entree,ABC Commissary,salad_mediterranean-salad.png,,
+3608,BBQ Rib Platter,served with Coleslaw and French Fries,Entree,Columbia Harbor House,Ribs.png,,
+3825,Watermelon Margarita,Patron Tequila with flavors of Watermelon,Alcoholic Beverage,Columbia Harbor House,bev_cocktails.png,,
+3835,Shrimp & Chicken Breast Nuggets Combo,"served with Hushpuppies and a choice of Green Beans &amp; Carrots, Apple Slices or French Fries",Entree,ABC Commissary,fried_shrimp_fish_chicken.png,Chicken Nuggets & Shrimp,
+3893,Peanut Butter Chocolate Finishline Cake,Peanut Butter and Chocolate Cake with Chocolate Ganache,Dessert,Columbia Harbor House,dessert_peanut_butter_chocolate_cake.png,Peanut Butter Chocolate Cake,
+3894,Chocolate Mousse Racer,Vanilla and Chocolate Swirl Cookie topped with Chocolate Mousse,Dessert,Columbia Harbor House,dessert_chocolate_mousse.png,Chocolate Mousse,
+4302,Kids' Garden Salad with Chicken - Gluten/Wheat Allergy-friendly,"served with Dannon® Danimals® Smoothie, GoGo squeeZ® Applesauce and choice of Beverage",Entree,ABC Commissary,salad_garden_salad_with_chicken.png,Kids Chicken Garden Salad,Kids
+4303,Kids' Allergy-friendly Chicken Breast Nuggets - Gluten/Wheat Allergy-friendly,"served with Dannon® Danimals® Smoothie, GoGo squeeZ® Applesauce and choice of Beverage",Entree,ABC Commissary,fried_chicken_nuggets.png,Kids Chicken Nuggets,Kids
+4304,Kids' Allergy-friendly Macaroni & Cheese - Gluten/Wheat Allergy-friendly,"served with Dannon® Danimals® Smoothie, GoGo squeeZ® Applesauce and choice of Beverage",Entree,ABC Commissary,mac-n-cheese.png,Kids Mac & Cheese,Kids
+4305,Grilled Salmon - Gluten/Wheat Allergy-friendly,served with French Fries and Green Beans with Carrots,Entree,ABC Commissary,salmon_grilled_salmon_green_beans.jpg,Grilled Salmon,
+4306,Allergy-friendly Chicken Breast Nuggets - Gluten/Wheat Allergy-friendly,served with French Fries,Entree,ABC Commissary,fried_chicken_nuggets.png,Chicken Nuggets  ,
+4307,Allergy-friendly Cookies - Gluten/Wheat Allergy-friendly,,Entree,ABC Commissary,dessert_cookies.png,Cookies,Dessert
+4308,Allergy-friendly Brownie - Gluten/Wheat Allergy-friendly,,Entree,ABC Commissary,dessert_brownies.jpeg,Brownie,Dessert
+4310,Kids' Allergy-friendly Chicken Breast Nuggets - Egg Allergy-friendly,"served with Dannon® Danimals® Smoothie, GoGo squeeZ® Applesauce and choice of Beverage",Entree,ABC Commissary,fried_chicken_nuggets.png,Kids Chicken Nuggets,Kids
+4311,Kids' Allergy-friendly Macaroni & Cheese - Egg Allergy-friendly,"served with Dannon® Danimals® Smoothie, GoGo squeeZ® Applesauce and choice of Beverage",Entree,ABC Commissary,mac-n-cheese.png,Kids Mac & Cheese,Kids
+4312,Grilled Salmon - Egg Allergy-friendly,served with French Fries and Green Beans with Carrots,Entree,ABC Commissary,salmon_grilled_salmon_green_beans.jpg,Grilled Salmon,
+4313,Allergy-friendly Chicken Breast Nuggets - Egg Allergy-friendly,served with French Fries,Entree,ABC Commissary,fried_chicken_nuggets.png,Chicken Nuggets  ,
+4315,Kids' Garden Salad with Chicken - Milk Allergy-friendly,"served with GoGo squeeZ® Applesauce, Green Beans with Carrots and small Dasani® Bottled Water",Entree,ABC Commissary,salad_garden_salad_with_chicken.png,Kids Chicken Garden Salad,Kids
+4316,Kids' Allergy-friendly Chicken Breast Nuggets - Milk Allergy-friendly,"served with GoGo squeeZ® Applesauce, Green Beans with Carrots and choice of Beverage",Entree,ABC Commissary,fried_chicken_nuggets.png,Kids Chicken Nuggets,Kids
+4317,Grilled Salmon - Milk Allergy-friendly,served with French Fries and Green Beans with Carrots,Entree,ABC Commissary,salmon_grilled_salmon_green_beans.jpg,Grilled Salmon,
+4318,Allergy-friendly Chicken Breast Nuggets - Milk Allergy-friendly,served with French Fries,Entree,ABC Commissary,fried_chicken_nuggets.png,Chicken Nuggets  ,
+4319,Allergy-friendly Cookies - Milk Allergy-friendly,,Entree,ABC Commissary,dessert_cookies.png,Cookies,Dessert
+4320,Kids' Tuna Sandwich - Peanut/Tree Nut Allergy-friendly,"served with Dannon® Danimals® Smoothie, GoGo squeeZ® Applesauce and choice of Beverage",Entree,ABC Commissary,sandwich_tuna_sandwich.png,Kids Tuna Sandwich,Kids
+4322,Kids' Chicken Breast Nuggets and Fish - Peanut/Tree Nut Allergy-friendly,served with choice of Sides and Beverage,Entree,ABC Commissary,fried_Chicken-and-Fish.png,Kids Chicken Nuggets & Fish,Kids
+4323,Kids' Chicken Breast Nuggets - Peanut/Tree Nut Allergy-friendly,served with choice of Sides and a Beverage,Entree,ABC Commissary,fried_chicken_nuggets.png,Kids Chicken Nuggets,Kids
+4324,Lobster Roll - Peanut/Tree Nut Allergy-friendly,served with House-made Potato Chips,Entree,ABC Commissary,sandwich_LobsterRoll.png,Lobster Roll,
+4325,Tuna Sandwich - Peanut/Tree Nut Allergy-friendly,served with House-made Potato Chips,Entree,ABC Commissary,sandwich_tuna_sandwich.png,Tuna Sandwich,
+4326,Chicken Pot Pie - Peanut/Tree Nut Allergy-friendly,served with Green Beans and Carrots,Entree,ABC Commissary,Chicken-Pot-Pie.png,Chicken Pot Pie,
+4327,Grilled Salmon - Peanut/Tree Nut Allergy-friendly,served with French Fries and Green Beans with Carrots,Entree,ABC Commissary,salmon_grilled_salmon_green_beans.jpg,Grilled Salmon,
+4328,Chicken Breast Nuggets (8 piece) - Peanut/Tree Nut Allergy-friendly,served with choice of Side,Entree,ABC Commissary,fried_chicken_nuggets.png,Chicken Nuggets  ,
+4329,Harbour Salad - Peanut/Tree Nut Allergy-friendly,drizzled with a Zinfandel Vinaigrette Dressing,Entree,ABC Commissary,salad_mediterranean-salad.png,Harbour Salad,
+4331,Seasonal Peach Cobbler - Peanut/Tree Nut Allergy-friendly,drizzled with Vanilla Sauce,Entree,ABC Commissary,dessert_peach-cobbler.jpg,Peach Cobbler,
+4333,Chicken Breast Nuggets & Fish Combo - Peanut/Tree Nut Allergy-friendly,served with Hush Puppies and choice of Side,Entree,ABC Commissary,fried_Chicken-and-Fish.png,Chicken Nuggets & Fish,
+4334,Trio Platter - Peanut/Tree Nut Allergy-friendly,"a combination of Fried Shrimp, Breaded Chicken Breast Nuggets and Battered Fish with Hush Puppies and choice of Side",Entree,ABC Commissary,fried_seafood_platter_fish_shrimp.png,Trio Platter,
+4335,Shrimp & Fish Combo - Peanut/Tree Nut Allergy-friendly,served with Hush Puppies and choice of Side,Entree,ABC Commissary,fried_shrimp_fish_chicken.png,Shrimp & Fish Combo,
+4336,Kids' Garden Salad with Chicken - Soy Allergy-friendly,"served with Dannon® Danimals® Smoothie, GoGo squeeZ® Applesauce and choice of Beverage",Entree,ABC Commissary,salad_garden_salad_with_chicken.png,Kids Chicken Garden Salad,Kids
+4337,Baked Chicken Breast - Soy Allergy-friendly,served with Green Beans and Carrots,Entree,ABC Commissary,chicken-breast_baked.png,Baked Chicken Breast,
+4339,Chicken Harbour Salad - Peanut/Tree Nut Allergy-friendly,drizzled with a Zinfandel Vinaigrette Dressing,Entree,ABC Commissary,salad_garden_salad_with_chicken.png,Chicken Harbour Salad,
+4724,1/3 lb Angus Bacon Cheeseburger - Gluten/Wheat Allergy-friendly,"served on an Allergy-friendly Bun with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,burger_angus_bacon_cheeseburger.jpeg,1/3 lb Angus Bacon Cheeseburger,
+4725,Vegan Burger - Gluten/Wheat Allergy-friendly,"served on an Allergy-friendly Bun with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,burger_vegan.png,Vegan Burger,
+4726,Allergy-friendly Chicken Strips - Gluten/Wheat Allergy-friendly,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,fried_chicken-strips.png,Chicken Strips,
+4727,Chicken Club - Gluten/Wheat Allergy-friendly,"served on an Allergy-friendly Bun with Coleslaw and choice of Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,sandwich_chicken_club.jpg,Chicken Club,
+4728,BBQ Ribs Platter - Gluten/Wheat Allergy-friendly,"served with Coleslaw and choice of Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,Ribs.png,BBQ Ribs Platter,
+4729,Mediterranean Salad with Chicken - Gluten/Wheat Allergy-friendly,tossed in a Mediterranean Vinaigrette and served with Hummus,Entree,Columbia Harbor House,salad_garden_salad_with_chicken.png,Chicken Mediterranean Salad,
+4730,Kids' Carved Turkey Sandwich - Gluten/Wheat Allergy-friendly,"served on an Allergy-friendly Bun with Carrots, Apple Slices and choice of Beverage",Entree,Columbia Harbor House,sandwich_turkey_sandwich.png,Kids Turkey Sandwich,Kids
+4731,Kids' Cheeseburger - Gluten/Wheat Allergy-friendly,"served on an Allergy-friendly Bun with Carrots, Apple Slices and choice of Beverage",Entree,Columbia Harbor House,burger_cheeseburger.jpeg,Kids Cheeseburger,Kids
+4732,Kids' Allergy-friendly Chicken Strips - Gluten/Wheat Allergy-friendly,"served with Carrots, Apple Slices and choice of Beverage",Entree,Columbia Harbor House,fried_chicken-strips.png,Kids Chicken Strips,Kids
+4734,Allergy-friendly Cookies - Gluten/Wheat Allergy-friendly,,Entree,Columbia Harbor House,dessert_cookies.png,Cookies,Dessert
+4735,Allergy-friendly Brownie - Gluten/Wheat Allergy-friendly,,Entree,Columbia Harbor House,dessert_brownies.jpeg,Brownie,Dessert
+4736,Allergy-friendly Cookies - Egg Allergy-friendly,,Entree,Columbia Harbor House,dessert_cookies.png,Cookies,Dessert
+4739,Allergy-friendly Cookies - Milk Allergy-friendly,,Entree,Columbia Harbor House,dessert_cookies.png,Cookies,Dessert
+4740,Allergy-friendly Cookies - Peanut/Tree Nut Allergy-friendly,,Entree,Columbia Harbor House,dessert_cookies.png,Cookies,Dessert
+4742,Allergy-friendly Brownie - Peanut/Tree Nut Allergy-friendly,,Entree,Columbia Harbor House,dessert_brownies.jpeg,Brownie,Dessert
+4743,1/3 lb Angus Bacon Cheeseburger - Soy Allergy-friendly,served on an Allergy-friendly Bun with your choice of fresh Green Beans or Apple Slices,Entree,Columbia Harbor House,burger_angus_bacon_cheeseburger.jpeg,1/3 lb Angus Bacon Cheeseburger,
+4744,Kids' Carved Turkey Sandwich - Soy Allergy-friendly,"served on an Allergy-friendly Bun with Carrots, Apple Slices and choice of small lowfat Milk or small Dasani® Water",Entree,Columbia Harbor House,sandwich_turkey_sandwich.png,Kids Turkey Sandwich,Kids
+4746,Kids' Carved Turkey Sandwich - Peanut/Tree Nut Allergy-friendly,"served with Carrots, Apple Slices and choice of small lowfat Milk or small Dasani® Water",Entree,Columbia Harbor House,sandwich_turkey_sandwich.png,Kids Turkey Sandwich,Kids
+4747,Kids' Cheeseburger - Peanut/Tree Nut Allergy-friendly,"served with Carrots, Apple Slices and choice of Beverage",Entree,Columbia Harbor House,burger_cheeseburger.jpeg,Kids Cheeseburger,Kids
+4748,Kids' Chicken Strips - Peanut/Tree Nut Allergy-friendly,"served with Carrots, Apple Slices and choice of Beverage",Entree,Columbia Harbor House,fried_chicken-strips.png,Kids Chicken Strips,Kids
+4749,Kids' Mac & Cheese - Peanut/Tree Nut Allergy-friendly,"served with Carrots, Apple Slices and choice of Beverage",Entree,Columbia Harbor House,mac-n-cheese.png,Kids Mac & Cheese,Kids
+4751,Kids' Hamburger - Milk Allergy-friendly,"served with Carrots, Apple Slices and choice of Beverage",Entree,Columbia Harbor House,burger.jpeg,Kids Hamburger,Kids
+4752,Kids' Chicken Strips - Milk Allergy-friendly,"served with Carrots, Apple Slices and choice of Beverage",Entree,Columbia Harbor House,fried_chicken-strips.png,Kids Chicken Strips,Kids
+4753,Kids' Smucker's® Uncrustables® Sandwich - Milk Allergy-friendly,"served with Carrots, Apple Slices and a small Dasani® Water",Entree,Columbia Harbor House,Smuckers_Uncrustables.jpg,Smuckers Uncrustables,Kids
+4754,Kids' Carved Turkey Sandwich - Egg Allergy-friendly,"served with Carrots, Apple Slices and choice of Beverage",Entree,Columbia Harbor House,sandwich_chicken_club.jpg,Kids Turkey Sandwich,Kids
+4755,Kids' Cheeseburger - Egg Allergy-friendly,"served with Carrots, Apple Slices and choice of Beverage",Entree,Columbia Harbor House,burger_cheeseburger.jpeg,Kids Cheeseburger,Kids
+4756,Kids' Chicken Strips - Egg Allergy-friendly,"served with Carrots, Apple Slices and choice of Beverage",Entree,Columbia Harbor House,fried_chicken-strips.png,Kids Chicken Strips,Kids
+4757,Kids' Smucker's® Uncrustables® Sandwich - Egg Allergy-friendly,"served with Carrots, Apple Slices and choice of small lowfat Milk or small Dasani® Water",Entree,Columbia Harbor House,Smuckers_Uncrustables.jpg,Smuckers Uncrustables,Kids
+4761,Mediterranean Salad with Chicken - Egg Allergy-friendly,tossed in a Mediterranean Vinaigrette and served with Hummus and Flatbread,Entree,Columbia Harbor House,salad_garden_salad_with_chicken.png,Chicken Mediterranean Salad,
+4764,Mediterranean Salad with Chicken - Milk Allergy-friendly,tossed in Oil and Vinegar and served with Hummus,Entree,Columbia Harbor House,salad_garden_salad_with_chicken.png,Chicken Mediterranean Salad,
+4766,1/3 lb Angus Bacon Cheeseburger - Egg Allergy-friendly,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,burger_angus_bacon_cheeseburger.jpeg,1/3 lb Angus Bacon Cheeseburger,
+4767,Vegan Burger - Egg Allergy-friendly,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,burger_vegan.png,Vegan Burger,
+4768,Chicken Breast Strips - Egg Allergy-friendly,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,fried_chicken-strips.png,Chicken Strips,
+4769,Chicken Club - Egg Allergy-friendly,served with Green Beans and French Fries or Apple Slices,Entree,Columbia Harbor House,sandwich_chicken_club.jpg,Chicken Club,
+4771,1/3 lb Angus Bacon Cheeseburger - Fish/Shellfish Allergy-friendly,served with your choice of fresh Green Beans or Apple Slices,Entree,Columbia Harbor House,burger_angus_bacon_cheeseburger.jpeg,1/3 lb Angus Bacon Cheeseburger,
+4772,Vegan Burger - Fish/Shellfish Allergy-friendly,served with your choice of fresh Green Beans or Apple Slices,Entree,Columbia Harbor House,burger_vegan.png,Vegan Burger,
+4773,Chicken Club - Fish/Shellfish Allergy-friendly,served with Coleslaw and choice of Green Beans or Apple Slices,Entree,Columbia Harbor House,sandwich_chicken_club.jpg,Chicken Club,
+4774,BBQ Ribs Platter - Fish/Shellfish Allergy-friendly,served with Coleslaw and choice of Green Beans or Apple Slices,Entree,Columbia Harbor House,Ribs.png,BBQ Ribs Platter,
+4775,1/3 lb Angus Bacon Burger - Milk Allergy-friendly,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,burger_angus_bacon_cheeseburger.jpeg,1/3 lb Angus Bacon Burger,
+4776,Vegan Burger - Milk Allergy-friendly,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,burger_vegan.png,Vegan Burger,
+4777,Chicken Breast Strips - Milk Allergy-friendly,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,fried_chicken-strips.png,Chicken Strips,
+4778,Chicken Club - Milk Allergy-friendly,"served with Coleslaw and choice of Green Beans,Apple Slices or French Fries",Entree,Columbia Harbor House,sandwich_chicken_club.jpg,Chicken Club,
+4779,BBQ Ribs Platter - Milk Allergy-friendly,"served with Coleslaw and choice of Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,Ribs.png,BBQ Ribs Platter,
+4780,1/3 lb Angus Bacon Cheeseburger - Peanut/Tree Nut Allergy-friendly,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,burger_angus_bacon_cheeseburger.jpeg,1/3 lb Angus Bacon Cheeseburger,
+4781,1/3 lb Angus Cheeseburger - Peanut/Tree Nut Allergy-friendly,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,burger_cheeseburger.jpeg,1/3 lb Angus Cheeseburger,
+4783,Chicken Breast Strips - Peanut/Tree Nut Allergy-friendly,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,fried_chicken-strips.png,Chicken Strips,
+4784,Chicken Club - Peanut/Tree Nut Allergy-friendly,"served with Coleslaw and choice of Green Beans, Apple Slices or French Fries",Entree,Columbia Harbor House,sandwich_chicken_club.jpg,Chicken Club,
+4786,"Shrimp, Fish, and Chicken Platter - Peanut/Tree Nut Allergy-friendly",served with Coleslaw and French Fries,Entree,Columbia Harbor House,fried_shrimp_fish_chicken.png,"Shrimp, Fish, & Chicken Platter",
+4788,Shrimp Platter - Peanut/Tree Nut Allergy-friendly,served with Coleslaw and French Fries,Entree,Columbia Harbor House,fried_shrimp.png,Shrimp Platter,
+4789,1/3 lb Angus Bacon Cheeseburger - Gluten/Wheat Allergy-friendly,served on an Allergy-friendly Bun with your choice of Steak Fries or Apple Slices,Entree,Columbia Harbor House,burger_angus_bacon_cheeseburger.jpeg,1/3 lb Angus Bacon Cheeseburger,
+4790,Vegan Burger - Gluten/Wheat Allergy-friendly,served on an Allergy-friendly Bun with your choice of Steak Fries or Apple Slices,Entree,Columbia Harbor House,burger_vegan.png,Vegan Burger,
+4791,BBQ Ribs Platter - Gluten/Wheat Allergy-friendly,served with Coleslaw and choice of Steak Fries or Apple Slices,Entree,Columbia Harbor House,Ribs.png,BBQ Ribs Platter,
+4792,Braised Beef and Enchilada Platter - Gluten/Wheat Allergy-friendly,served with a Roasted Corn and Cheese Enchilada,Entree,Columbia Harbor House,mex_beef_enchiladas.jpeg,Braised Beef & Enchilada Platter,
+4793,Mediterranean Salad with Chicken - Gluten/Wheat Allergy-friendly,tossed in a Mediterranean Vinaigrette and served with Hummus,Entree,Columbia Harbor House,salad_garden_salad_with_chicken.png,Chicken Mediterranean Salad,
+4794,Kids' Carved Turkey Sandwich - Gluten/Wheat Allergy-friendly,"served on an Allergy-friendly Bun with Carrots, Apple Slices and choice of Beverage",Entree,Columbia Harbor House,sandwich_turkey_sandwich.png,Kids Turkey Sandwich,Kids
+4796,Allergy-friendly Brownie - Gluten/Wheat Allergy-friendly,,Entree,Columbia Harbor House,dessert_brownies.jpeg,Brownie,Dessert
+4797,1/3 lb Angus Bacon Cheeseburger - Egg Allergy-friendly,served with your choice of Steak Fries or Apple Slices,Entree,Columbia Harbor House,burger_angus_bacon_cheeseburger.jpeg,1/3 lb Angus Bacon Cheeseburger,
+4799,BBQ Ribs Platter - Egg Allergy-friendly,served with Steak Fries and Apple Slices,Entree,Columbia Harbor House,Ribs.png,BBQ Ribs Platter,
+4801,Shrimp Teriyaki Bowl - Egg Allergy-friendly,Stir-fried Shrimp and Vegetables tossed in a House-made Teriyaki Sauce,Entree,Columbia Harbor House,asian_shrimp-terriyaki_bowl.jpg,Shrimp Teriyaki Bowl,
+4804,Kids' Carved Turkey Sandwich - Egg Allergy-friendly,"served with Carrots, Apple Slices and choice of small lowfat Milk or small Dasani® Water. Meets Disney Nutrition Guidelines for Complete Meals without substitutions",Entree,Columbia Harbor House,sandwich_turkey_sandwich.png,Kids Turkey Sandwich,Kids
+4811,Mediterranean Salad with Chicken - Fish/Shellfish Allergy-friendly,tossed in a Mediterranean Vinaigrette and served with Hummus and Flatbread,Entree,Columbia Harbor House,salad_garden_salad_with_chicken.png,Chicken Mediterranean Salad,
+4813,Kids' Smucker's® Uncrustables® Sandwich - Fish/Shellfish Allergy-friendly,"served with Carrots, Apple Slices and choice of small lowfat Milk or small Dasani® Water",Entree,Columbia Harbor House,Smuckers_Uncrustables.jpg,Smuckers Uncrustables,Kids
+4814,Kids' Mac & Cheese - Fish/Shellfish Allergy-friendly,"served with Carrots, Apple Slices and choice of Beverage",Entree,Columbia Harbor House,mac-n-cheese.png,Kids Mac & Cheese,Kids
+4816,Allergy-friendly Brownie - Fish/Shellfish Allergy-friendly,,Entree,Columbia Harbor House,dessert_brownies.jpeg,Brownie,Dessert
+4821,Kids' Carved Turkey Sandwich - Soy Allergy-friendly,"served on an Allergy-friendly Bun with Carrots, Apple Slices and choice of small lowfat Milk or small Dasani® Water",Entree,Columbia Harbor House,sandwich_turkey_sandwich.png,Kids Turkey Sandwich,Kids
+4822,1/3 lb Angus Bacon Cheeseburger - Soy Allergy-friendly,served on an Allergy-friendly Bun with Apple Slices,Entree,Columbia Harbor House,burger_angus_bacon_cheeseburger.jpeg,1/3 lb Angus Bacon Cheeseburger,
+4823,Kids' Carved Turkey Sandwich - Milk Allergy-friendly,"served with Carrots, Apple Slices and a small Dasani® Water",Entree,Columbia Harbor House,sandwich_turkey_sandwich.png,Kids Turkey Sandwich,Kids
+4824,Kids' Smucker's® Uncrustables® Sandwich - Milk Allergy-friendly,"served with Carrots, Apple Slices and a small Dasani® Water",Entree,Columbia Harbor House,Smuckers_Uncrustables.jpg,Smuckers Uncrustables,Kids
+4825,Kids' Mac & Cheese - Peanut/Tree Nut Allergy-friendly,served with choice of sides and Beverage,Entree,Columbia Harbor House,mac-n-cheese.png,Kids Mac & Cheese,Kids
+4827,1/3 lb fresh Angus Bacon Burger,"served with fresh Steamed Broccoli, Apple Slices or French Fries",Entree,Columbia Harbor House,burger_bacon_only.png,1/3 lb Angus Bacon Burger,
+4829,Braised Beef and Enchilada Platter - Peanut/Tree Nut Allergy-friendly,served with a Roasted Corn and Cheese Enchilada,Entree,Columbia Harbor House,mex_beef_enchiladas.jpeg,Braised Beef and Enchilada Platter,
+4830,Shrimp Teriyaki Bowl - Peanut/Tree Nut Allergy-friendly,Stir-fried Shrimp and Vegetables tossed in a House-made Teriyaki Sauce,Entree,Columbia Harbor House,asian_shrimp-terriyaki_bowl.jpg,Shrimp Teriyaki Bowl,
+4834,1/3 lb Angus Bacon Burger - Milk Allergy-friendly,served with your choice of Steak Fries or Apple Slices,Entree,Columbia Harbor House,burger_bacon_only.png,1/3 lb Angus Bacon Burger,
+4835,Vegan Burger - Milk Allergy-friendly,served with your choice of Steak Fries or Apple Slices,Entree,Columbia Harbor House,burger_vegan.png,Vegan Burger,
+4836,BBQ Ribs Platter - Milk Allergy-friendly,served with Coleslaw and choice of Steak Fries or Apple Slices,Entree,Columbia Harbor House,Ribs.png,BBQ Ribs Platter,
+4837,Vegan Burger - Peanut/Tree Nut Allergy-friendly,served with Steak Fries,Entree,Columbia Harbor House,burger_vegan.png,Vegan Burger,
+4838,Southwest BBQ Burger - Peanut/Tree Nut Allergy-friendly,served with Signature Southwestern Steak Fries dusted in Chili-lime Seasoning,Entree,Columbia Harbor House,burger_southwest_BBQ.jpg,Southwest BBQ Burger,
+4840,"Shrimp, Fish, and Chicken Platter - Peanut/Tree Nut Allergy-friendly",served with Steak Fries and Coleslaw,Entree,Columbia Harbor House,fried_shrimp_fish_chicken.png,"Shrimp, Fish, & Chicken Platter",
+4841,Fish and Shrimp Platter - Peanut/Tree Nut Allergy-friendly,served with Steak Fries and Coleslaw,Entree,Columbia Harbor House,fried_seafood_platter_fish_shrimp.png,Fish & Shrimp Platter,
+4842,Shrimp Platter - Peanut/Tree Nut Allergy-friendly,served with Steak Fries and Coleslaw,Entree,Columbia Harbor House,fried_shrimp.png,Shrimp Platter,
+5142,Peanut Butter and Chocolate Coffin Cake ,Coffin Cake layered with Peanut Butter and Chocolate and topped with Chocolate Ganache,Beverage,Columbia Harbor House,dessert_peanut_butter_chocolate_cake.png,Peanut Butter Chocolate Cake,Dessert
+5143,Chocolate and Orange Cream Parfait,layers of Chocolate Cake and Orange Cream,Beverage,Columbia Harbor House,dessert_chocolate_orange_parfait.jpg,Chocolate & Orange Parfait,Dessert
+5388,Pumpkin Straw,,Beverage,Columbia Harbor House,dessert_pumpkin.jpeg,,
+5445,Chocolate Mousse Present,Chocolate Mousse decorated as a Holiday Present,Dessert,Columbia Harbor House,dessert_chocolate_mousse.png,Chocolate Mousse,
+5446,Winterberry Margarita,crafted with Silver Patrón Tequila,Dessert,Columbia Harbor House,bev_cocktails.png,,Alcoholic Beverage
+5469,Winterberry Margarita,crafted with Silver Patrón Tequila,Dessert,Columbia Harbor House,bev_cocktails.png,,Alcoholic Beverage
