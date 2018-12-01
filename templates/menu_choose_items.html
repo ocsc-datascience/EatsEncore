@@ -17,9 +17,9 @@
         <a href="#Entrées">Entrées</a> | 
         <a href="#Sides">Sides</a> | 
         <a href="#Desserts">Desserts</a> | 
-        <a href="#Beverages">Beverages</a>  | 
+        <a href="#Beverages">Beverages</a>  
         {% if age_group == "2" %}
-        <a href="#">Adult Beverages</a>  
+          | <a href="#alcohol">Adult Beverages</a>  
         {% endif %}    
        <p></p>
        <form id="orderform" method="POST" action="/checkout">
@@ -46,7 +46,7 @@
   <div class="col-md-2">
     <div class="card mb-2 box-shadow">
       <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
-      <div class="card-body" style ="height: 410px">
+      <div class="card-body" style ="height: 320px">
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group text-center">
             <button class="btn class_kids id="{{ item.id }}" name="{{item.name}}" description="{{ item.display_desc }}" img="{{item.img}}" type="button"  style="color: blue"><strong>Add Item</strong></button>
@@ -69,7 +69,7 @@
   <div class="col-md-2">
     <div class="card mb-2 box-shadow">
       <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
-      <div class="card-body" style ="height: 410px">
+      <div class="card-body" style ="height: 320px">
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group text-center">
             <button class="btn class_entree" id="{{ item.id }}" name="{{item.name}}" description="{{ item.display_desc }}" img="{{item.img}}" type="button" style="color: blue"><strong>Add Item</strong></button>
@@ -92,7 +92,7 @@
   <div class="col-md-2">
     <div class="card mb-2 box-shadow">
       <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
-      <div class="card-body" style ="height: 410px">
+      <div class="card-body" style ="height: 320px">
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group text-center">
             <!--Charla To Do: Change btn class to btn class_side and remove the curly braces/cat_id -->
@@ -116,7 +116,7 @@
   <div class="col-md-2">
     <div class="card mb-2 box-shadow">
       <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
-      <div class="card-body" style ="height: 410px">
+      <div class="card-body" style ="height: 320px">
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group text-center">
             <button class="btn class_dessert" id="{{ item.id }}" name="{{item.name}}" description="{{ item.display_desc }}" img="{{item.img}}" type="button"  style="color: blue"><strong>Add Item</strong></button>
@@ -139,7 +139,7 @@
   <div class="col-md-2">
     <div class="card mb-2 box-shadow">
       <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
-      <div class="card-body" style ="height: 410px">
+      <div class="card-body" style ="height: 320px">
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group text-center">
             <button class="btn class_beverage" id="{{ item.id }}" name="{{item.name}}" description="{{ item.display_desc }}" img="{{item.img}}" type="button"  style="color: blue"><strong>Add Item</strong></button>
@@ -158,13 +158,13 @@
 
 <!--Products: Alcoholic Adult Beverages -->
 {% if age_group == "2" %}
-<a name="Adult Beverages"></a><h4>Adult Beverages</h4>
+<a name="alcohol"></a><h4>Adult Beverages</h4>
 <div class="row">
 {% for item in alcoholicBeverage %}
   <div class="col-md-2">
     <div class="card mb-2 box-shadow">
       <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
-      <div class="card-body" style ="height: 410px">
+      <div class="card-body" style ="height: 320px">
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group text-center">
             <button class="btn class_alcoholicBeverage" id="{{ item.id }}" name="{{item.name}}" description="{{ item.display_desc }}" img="{{item.img}}" type="button"  style="color: blue"><strong>Add Item</strong></button>
