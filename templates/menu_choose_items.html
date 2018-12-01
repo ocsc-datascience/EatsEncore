@@ -6,12 +6,12 @@
 
 <div class="row">
 
- <div class="col-xs-6 col-md-12 md-3">
+  <div class="col-xs-6 col-md-12 md-3">
       <h1>Feeling Hungry?</h1>
       <h3>Order some delish grub.</h3>
       <p>Bbased on personal preferences, create a restaurant order with whatever you're hungry for from in any or all of the categories; however, please know there's a limit of 1 item per category. 
       </p>
-        <a href="#Entrées">Entrées</a> | <a href="#Sides">Sides</a> | <a href="#Desserts">Desserts</a> | <a href="#Beverages">Beverages</a>  | <a href="#">Adult Beverages</a> | <a href="#Kids">Kids</a>
+        <a href="#Kids">Kids</a> | <a href="#Entrées">Entrées</a> | <a href="#Sides">Sides</a> | <a href="#Desserts">Desserts</a> | <a href="#Beverages">Beverages</a>  | <a href="#">Adult Beverages</a>  
        <p></p>
        <form id="orderform" method="POST" action="/checkout">
         <input type="hidden" id="selections" name="selections" value="{}">
@@ -21,11 +21,33 @@
           </div>
         </div>
         </form>
-    </div>
-        <br>
+  </div>
+</div>
+        <br>  
         <br>
         <br>
 
+
+<!--Products: Kids-->
+<a name="Kids"></a><h4>Kids</h4>
+<div class="row">
+{% for item in kids %}
+  <div class="col-md-2">
+    <div class="card mb-2 box-shadow">
+      <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
+      <div class="card-body" style ="height: 410px">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group text-center">
+            <button class="btn class_kids id="{{ item.id }}" name="{{item.name}}" description="{{ item.display_desc }}" img="{{item.img}}" type="button"  style="color: blue"><strong>Add Item</strong></button>
+          </div>
+        </div>
+        <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
+        
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
 
 
 <!--Products: Entrees-->
@@ -47,6 +69,7 @@
     </div>
   </div>
 {% endfor %}
+</div>
 
 
 
@@ -70,6 +93,7 @@
     </div>
   </div>
 {% endfor %}
+</div>
 
 
 
@@ -92,9 +116,11 @@
     </div>
   </div>
 {% endfor %}
+</div>
 
 
 <!--Products: Beverage-->
+<BR>
 <a name="Beverages"></a><h4>Beverages</h4>
 <div class="row">
 {% for item in beverage %}
@@ -113,6 +139,7 @@
     </div>
   </div>
 {% endfor %}
+</div>
 
 
 
@@ -139,25 +166,7 @@
 
 
 
-<!--Products: Kids-->
-<a name="Kids"></a><h4>Kids</h4>
-<div class="row">
-{% for item in kids %}
-  <div class="col-md-2">
-    <div class="card mb-2 box-shadow">
-      <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
-      <div class="card-body" style ="height: 410px">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group text-center">
-            <button class="btn class_kids id="{{ item.id }}" name="{{item.name}}" description="{{ item.display_desc }}" img="{{item.img}}" type="button"  style="color: blue"><strong>Add Item</strong></button>
-          </div>
-        </div>
-        <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
-        
-      </div>
-    </div>
-  </div>
-{% endfor %}
+
 
 
 
