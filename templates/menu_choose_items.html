@@ -164,9 +164,17 @@
 <!-- Begin JS for capturing selected items and disabling Add Item button upon click inside of each category -->
 <script>
 
+var selections = {};
+
 //Entree selection
 d3.selectAll(".class_entree").on('click', function()
     { 
+      var id = d3.select(this).attr("id")
+      console.log(id)
+
+      selections['entree'] = id;
+      console.log(selections);
+
       var name = d3.select(this).attr("name")
       console.log(name)
 
