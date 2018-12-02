@@ -22,8 +22,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///db/eatsencore.sqlite"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-engine = db.get_engine()
-session = Session(engine)
+#engine = db.get_engine()
+#session = Session(engine)
 
 
 # homepage form > menu
@@ -70,7 +70,7 @@ def checkout():
         
             if key in selections.keys():
                 ordercats.append(key)
-                res = session.query(pm.Product).filter(pm.Product.id == \
+                res = db.session.query(pm.Product).filter(pm.Product.id == \
                                               int(selections[key])).first()
 
                 order[key]['img'] = res.img
@@ -82,7 +82,7 @@ def checkout():
         recommendations = []
         for rec in recos:
             md = {}
-            res = session.query(pm.Product).filter(pm.Product.id == \
+            res = db.session.query(pm.Product).filter(pm.Product.id == \
                                                    rec).first()
 
             md['id'] = rec
@@ -122,7 +122,7 @@ def get_products(loc_id):
     except:
         return Response("{}", status=400, mimetype='application/json')
         
-    res = session.query(pm.Product).filter(pm.Product.location_id == \
+    res = db.session.query(pm.Product).filter(pm.Product.location_id == \
                     int(loc_id)).all()
 
     xlist = []
@@ -139,69 +139,69 @@ def menu(age_group):
 
     loc_id = 1
 
-    res = session.query(pm.Category).all()
+    res = db.session.query(pm.Category).all()
     for cat in res:
         print(cat.name) 
 
     
 
-    #Entrées Call
-    entree_cat = session.query(pm.Category)\
+    #Entrees Call
+    entree_cat = db.session.query(pm.Category)\
                 .filter(pm.Category.name == 'Entree').first()
     
-    entrees = session.query(pm.Product).filter(pm.Product.location_id == \
+    entrees = db.session.query(pm.Product).filter(pm.Product.location_id == \
                                            int(loc_id))\
             .filter(pm.Product.category_id == entree_cat.id).all()
 
 
     #Side Dishes Call
-    side_cat = session.query(pm.Category)\
+    side_cat = db.session.query(pm.Category)\
                 .filter(pm.Category.name == 'Side').first()
     
-    side = session.query(pm.Product).filter(pm.Product.location_id == \
+    side = db.session.query(pm.Product).filter(pm.Product.location_id == \
                                            int(loc_id))\
             .filter(pm.Product.category_id == side_cat.id).all()
 
 
     #Desserts Call
-    dessert_cat = session.query(pm.Category)\
+    dessert_cat = db.session.query(pm.Category)\
                 .filter(pm.Category.name == 'Dessert').first()
     
-    dessert = session.query(pm.Product).filter(pm.Product.location_id == \
+    dessert = db.session.query(pm.Product).filter(pm.Product.location_id == \
                                            int(loc_id))\
             .filter(pm.Product.category_id == dessert_cat.id).all()
 
 
     #Beverages Call
-    beverage_cat = session.query(pm.Category)\
+    beverage_cat = db.session.query(pm.Category)\
                 .filter(pm.Category.name == 'Beverage').first()
     
-    beverage = session.query(pm.Product).filter(pm.Product.location_id == \
+    beverage = db.session.query(pm.Product).filter(pm.Product.location_id == \
                                            int(loc_id))\
             .filter(pm.Product.category_id == beverage_cat.id).all()
 
 
     # #Adult Boozy Beverages Call
-    alcoholicBeverage_cat = session.query(pm.Category)\
+    alcoholicBeverage_cat = db.session.query(pm.Category)\
                  .filter(pm.Category.name == 'Alcoholic Beverage').first()
     
-    alcoholicBeverage = session.query(pm.Product).filter(pm.Product.location_id == \
+    alcoholicBeverage = db.session.query(pm.Product).filter(pm.Product.location_id == \
                                             int(loc_id))\
              .filter(pm.Product.category_id == alcoholicBeverage_cat.id).all()
 
 
 
     #Beverages Call
-    kids_cat = session.query(pm.Category)\
+    kids_cat = db.session.query(pm.Category)\
                 .filter(pm.Category.name == 'Kids').first()
     
-    kids = session.query(pm.Product).filter(pm.Product.location_id == \
+    kids = db.session.query(pm.Product).filter(pm.Product.location_id == \
                                            int(loc_id))\
             .filter(pm.Product.category_id == kids_cat.id).all()
 
 
 
-    #Request after all category calls have been made—THIS STAYS AT BOTTOM
+
     if request.method == 'GET':
         return render_template('menu_choose_items.html',age_group=age_group,
                                entrees=entrees,
