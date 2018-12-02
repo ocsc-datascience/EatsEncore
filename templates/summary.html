@@ -5,51 +5,48 @@
  <div class="row">
 
  <div class="col-xs-6 col-md-12 mt-3">
-      <h1>Review Order</h1>
+      <h1>Order Summary</h1>
       </p>
        <p>
-       	<!--This button goes to a summary page that repeats full order-->
        	<button class="btn btn-primary " name="submit" type="submit" style="float: 
-       right">Submit Order</button></p> 
+       right">Start New Order</button></p> 
        <br></br>
     </div>
 </div>
 
-<BR></BR>
-<h3>Your Selections</h3>
-<BR>
 
-<div class="row">
 {% for key in ordercats %}
   <div class="col-md-2">
     <div class="card mb-2 box-shadow">
       <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ order[key].img }}" data-holder-rendered="true">
-      <div class="card-body" style ="height: 320px">
-        <div class="d-flex justify-content-between align-items-center">  
+      <div class="card-body" style ="height: 410px">
+        <div class="d-flex justify-content-between align-items-center">
+          
         </div>
         <p class="card-text"><strong>{{ order[key].name }}</strong> {{ order[key].display_desc }}</p>
+        
       </div>
     </div>
   </div>
 {% endfor %}
-</div>
 
 
 <p></p>
 <BR></BR>
 <BR></BR>
-<h3>Enhance Your Meal</h3>
-<BR>
+<!-- <h3>Enhance Your Meal</h3>
+<BR> -->
 
-<div class="row">
-{% for item in recommendations %}
+<!-- {% for item in recommendations %}
   <div class="col-md-2">
     <div class="card mb-2 box-shadow">
       <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ item.img }}" data-holder-rendered="true">
-      <div class="card-body" style ="height: 320px">
+      <div class="card-body" style ="height: 410px">
         <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group text-center">
-            <button class="btn class_recommend" id="{{ item.id }}" type="button"  style="color: blue"><strong>Add Item</strong></button>
+          <div class="btn-group text-center"> -->
+            <!--Commented version was the initial way, yet then gave category IDs to btn class_entree and removed the curly braces/cat_id -->
+            <!-- <button class="btn class{{item.category_id}}" id="{{ item.id }}" type="button"  style="color: blue"><strong>Add Item</strong></button> -->
+            <!-- <button class="btn class_recommend" id="{{ item.id }}" type="button"  style="color: blue"><strong>Add Item</strong></button>
           </div>
         </div>
         <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
@@ -57,15 +54,14 @@
       </div>
     </div>
   </div>
-{% endfor %}
-</div>
+{% endfor %} -->
 
                 
 <div class="col-xs-6 col-md-12 mt-3">
        <p>
-       	<!--This button goes to a summary page that repeats full order-->
-       	<button class="btn btn-primary " name="submit" type="submit" style="float: 
-       right">Submit Order</button></p> 
+       	<!--ASK TEAM WHERE WE WANT THIS TO GO? PAGE THAT INCLUDES FINAL ORDER?-->
+        <button class="btn btn-primary " name="submit" type="submit" style="float: 
+       right">Start New Order</button></p> 
    </p> 
        <br></br>
     </div>

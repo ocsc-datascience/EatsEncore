@@ -181,7 +181,16 @@
 
 
 
-
+       <form id="orderform" method="POST" action="/checkout">
+        <input type="hidden" id="selections" name="selections" value="{}">
+        <input type="hidden" id="age_group" name="age_group" value={{ age_group }}>
+        <div class="form-row" style="float: right;">
+          <div class="form-group col-md-2">
+            <button id="mysubmit" class="btn btn-primary">Go To Checkout</button>
+          </div>
+        </div>
+        </form>
+  </div>
 
 
 
