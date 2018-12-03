@@ -216,17 +216,8 @@ def menu(age_group):
 
 
 
-# filter recommendation by age group
-# @app.route("/checkout/<age_group>",methods=['GET','POST'])
-# def menu(age_group):
-
-#     loc_id = 1
-
-#     res = db.session.query(pm.Category).all()
-#     for cat in res:
-#         print(cat.name) 
-
-    
+# recommendations added to cart
+# @app.route("/summary",methods=['GET','POST'])
 
 #     #Recommendations Call
 #     recommendation_cat = db.session.query(pm.Category)\
