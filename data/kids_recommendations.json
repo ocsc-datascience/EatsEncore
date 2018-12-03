@@ -1,21 +1,20 @@
 {
   "1813": {
-    "category": "Side",
-    "Side": -1,
-    "Entree": -1,
-    "Kids": {
+    "side": -1,
+    "entree": -1,
+    "kids": {
       "id": 2243,
       "support": 0.00945179584120983,
       "confidence": 0.3125,
       "lift": 1.5236175115207373
     },
-    "Dessert": {
+    "dessert": {
       "id": 3411,
       "support": 0.003780718336483932,
       "confidence": 0.125,
       "lift": 3.3910256410256414
     },
-    "Beverage": {
+    "beverage": {
       "id": 1858,
       "support": 0.00945179584120983,
       "confidence": 0.3125,
@@ -23,17 +22,16 @@
     }
   },
   "1838": {
-    "category": "Side",
-    "Side": -1,
-    "Entree": -1,
-    "Kids": {
+    "side": -1,
+    "entree": -1,
+    "kids": {
       "id": 1848,
       "support": 0.003780718336483932,
       "confidence": 0.4444444444444445,
       "lift": 1.851268591426072
     },
-    "Dessert": -2,
-    "Beverage": {
+    "dessert": -2,
+    "beverage": {
       "id": 1858,
       "support": 0.001890359168241966,
       "confidence": 0.22222222222222224,
@@ -41,30 +39,28 @@
     }
   },
   "1848": {
-    "category": "Kids",
-    "Kids": -1,
-    "Entree": -1,
-    "Side": {
+    "kids": -1,
+    "entree": -1,
+    "side": {
       "id": 3289,
       "support": 0.007561436672967864,
       "confidence": 0.031496062992125984,
       "lift": 1.9601667438628994
     },
-    "Dessert": -2,
-    "Beverage": -2
+    "dessert": -2,
+    "beverage": -2
   },
   "1851": {
-    "category": "Kids",
-    "Kids": -1,
-    "Entree": -1,
-    "Side": -2,
-    "Dessert": {
+    "kids": -1,
+    "entree": -1,
+    "side": -2,
+    "dessert": {
       "id": 2245,
       "support": 0.002835538752362949,
       "confidence": 0.034090909090909095,
       "lift": 2.0037878787878793
     },
-    "Beverage": {
+    "beverage": {
       "id": 1852,
       "support": 0.002835538752362949,
       "confidence": 0.034090909090909095,
@@ -72,22 +68,21 @@
     }
   },
   "1852": {
-    "category": "Beverage",
-    "Beverage": -1,
-    "Entree": -1,
-    "Kids": {
+    "beverage": -1,
+    "entree": -1,
+    "kids": {
       "id": 2244,
       "support": 0.003780718336483932,
       "confidence": 0.16666666666666666,
       "lift": 2.2606837606837606
     },
-    "Side": {
+    "side": {
       "id": 1813,
       "support": 0.003780718336483932,
       "confidence": 0.16666666666666666,
       "lift": 5.510416666666666
     },
-    "Dessert": {
+    "dessert": {
       "id": 3411,
       "support": 0.002835538752362949,
       "confidence": 0.125,
@@ -95,33 +90,30 @@
     }
   },
   "1855": {
-    "category": "Beverage",
-    "Beverage": -1,
-    "Entree": -1,
-    "Kids": -2,
-    "Side": -2,
-    "Dessert": -2
+    "beverage": -1,
+    "entree": -1,
+    "kids": -2,
+    "side": -2,
+    "dessert": -2
   },
   "1856": {
-    "category": "Beverage",
-    "Beverage": -1,
-    "Entree": -1,
-    "Kids": -2,
-    "Side": -2,
-    "Dessert": -2
+    "beverage": -1,
+    "entree": -1,
+    "kids": -2,
+    "side": -2,
+    "dessert": -2
   },
   "1858": {
-    "category": "Beverage",
-    "Beverage": -1,
-    "Entree": -1,
-    "Kids": -2,
-    "Side": {
+    "beverage": -1,
+    "entree": -1,
+    "kids": -2,
+    "side": {
       "id": 1813,
       "support": 0.00945179584120983,
       "confidence": 0.11904761904761905,
       "lift": 3.936011904761905
     },
-    "Dessert": {
+    "dessert": {
       "id": 3411,
       "support": 0.007561436672967864,
       "confidence": 0.09523809523809525,
@@ -129,43 +121,40 @@
     }
   },
   "2207": {
-    "category": "Dessert",
-    "Dessert": -1,
-    "Entree": -1,
-    "Kids": {
+    "dessert": -1,
+    "entree": -1,
+    "kids": {
       "id": 2244,
       "support": 0.001890359168241966,
       "confidence": 0.6666666666666666,
       "lift": 9.042735042735043
     },
-    "Side": -2,
-    "Beverage": -2
+    "side": -2,
+    "beverage": -2
   },
   "2208": {
-    "category": "Dessert",
-    "Dessert": -1,
-    "Entree": -1,
-    "Kids": -2,
-    "Side": -2,
-    "Beverage": -2
+    "dessert": -1,
+    "entree": -1,
+    "kids": -2,
+    "side": -2,
+    "beverage": -2
   },
   "2218": {
-    "category": "Beverage",
-    "Beverage": -1,
-    "Entree": -1,
-    "Kids": {
+    "beverage": -1,
+    "entree": -1,
+    "kids": {
       "id": 2243,
       "support": 0.00945179584120983,
       "confidence": 0.3125,
       "lift": 1.5236175115207373
     },
-    "Side": {
+    "side": {
       "id": 1813,
       "support": 0.001890359168241966,
       "confidence": 0.0625,
       "lift": 2.06640625
     },
-    "Dessert": {
+    "dessert": {
       "id": 3411,
       "support": 0.002835538752362949,
       "confidence": 0.09375,
@@ -173,17 +162,16 @@
     }
   },
   "2221": {
-    "category": "Side",
-    "Side": -1,
-    "Entree": -1,
-    "Kids": {
+    "side": -1,
+    "entree": -1,
+    "kids": {
       "id": 1848,
       "support": 0.006616257088846881,
       "confidence": 0.5384615384615384,
       "lift": 2.242883101150818
     },
-    "Dessert": -2,
-    "Beverage": {
+    "dessert": -2,
+    "beverage": {
       "id": 1858,
       "support": 0.001890359168241966,
       "confidence": 0.15384615384615385,
@@ -191,25 +179,23 @@
     }
   },
   "2222": {
-    "category": "Side",
-    "Side": -1,
-    "Entree": -1,
-    "Kids": -2,
-    "Dessert": -2,
-    "Beverage": -2
+    "side": -1,
+    "entree": -1,
+    "kids": -2,
+    "dessert": -2,
+    "beverage": -2
   },
   "2234": {
-    "category": "Side",
-    "Side": -1,
-    "Entree": -1,
-    "Kids": {
+    "side": -1,
+    "entree": -1,
+    "kids": {
       "id": 1848,
       "support": 0.003780718336483932,
       "confidence": 0.4444444444444445,
       "lift": 1.851268591426072
     },
-    "Dessert": -2,
-    "Beverage": {
+    "dessert": -2,
+    "beverage": {
       "id": 1858,
       "support": 0.001890359168241966,
       "confidence": 0.22222222222222224,
@@ -217,17 +203,16 @@
     }
   },
   "2243": {
-    "category": "Kids",
-    "Kids": -1,
-    "Entree": -1,
-    "Side": {
+    "kids": -1,
+    "entree": -1,
+    "side": {
       "id": 1813,
       "support": 0.00945179584120983,
       "confidence": 0.04608294930875576,
       "lift": 1.5236175115207373
     },
-    "Dessert": -2,
-    "Beverage": {
+    "dessert": -2,
+    "beverage": {
       "id": 2218,
       "support": 0.00945179584120983,
       "confidence": 0.04608294930875576,
@@ -235,17 +220,16 @@
     }
   },
   "2244": {
-    "category": "Kids",
-    "Kids": -1,
-    "Entree": -1,
-    "Side": -2,
-    "Dessert": {
+    "kids": -1,
+    "entree": -1,
+    "side": -2,
+    "dessert": {
       "id": 2207,
       "support": 0.001890359168241966,
       "confidence": 0.025641025641025644,
       "lift": 9.042735042735043
     },
-    "Beverage": {
+    "beverage": {
       "id": 1852,
       "support": 0.003780718336483932,
       "confidence": 0.05128205128205129,
@@ -253,22 +237,21 @@
     }
   },
   "2245": {
-    "category": "Dessert",
-    "Dessert": -1,
-    "Entree": -1,
-    "Kids": {
+    "dessert": -1,
+    "entree": -1,
+    "kids": {
       "id": 1851,
       "support": 0.002835538752362949,
       "confidence": 0.16666666666666669,
       "lift": 2.003787878787879
     },
-    "Side": {
+    "side": {
       "id": 3289,
       "support": 0.001890359168241966,
       "confidence": 0.11111111111111112,
       "lift": 6.915032679738562
     },
-    "Beverage": {
+    "beverage": {
       "id": 1858,
       "support": 0.003780718336483932,
       "confidence": 0.22222222222222224,
@@ -276,38 +259,35 @@
     }
   },
   "2251": {
-    "category": "Beverage",
-    "Beverage": -1,
-    "Entree": -1,
-    "Kids": -2,
-    "Side": -2,
-    "Dessert": -2
+    "beverage": -1,
+    "entree": -1,
+    "kids": -2,
+    "side": -2,
+    "dessert": -2
   },
   "3020": {
-    "category": "Kids",
-    "Kids": -1,
-    "Entree": -1,
-    "Side": -2,
-    "Dessert": -2,
-    "Beverage": -2
+    "kids": -1,
+    "entree": -1,
+    "side": -2,
+    "dessert": -2,
+    "beverage": -2
   },
   "3289": {
-    "category": "Side",
-    "Side": -1,
-    "Entree": -1,
-    "Kids": {
+    "side": -1,
+    "entree": -1,
+    "kids": {
       "id": 3371,
       "support": 0.006616257088846881,
       "confidence": 0.4117647058823529,
       "lift": 3.9967620075553154
     },
-    "Dessert": {
+    "dessert": {
       "id": 2245,
       "support": 0.001890359168241966,
       "confidence": 0.11764705882352941,
       "lift": 6.915032679738562
     },
-    "Beverage": {
+    "beverage": {
       "id": 1858,
       "support": 0.004725897920604915,
       "confidence": 0.29411764705882354,
@@ -315,48 +295,45 @@
     }
   },
   "3371": {
-    "category": "Kids",
-    "Kids": -1,
-    "Entree": -1,
-    "Side": {
+    "kids": -1,
+    "entree": -1,
+    "side": {
       "id": 3289,
       "support": 0.006616257088846881,
       "confidence": 0.06422018348623854,
       "lift": 3.996762007555316
     },
-    "Dessert": {
+    "dessert": {
       "id": 3408,
       "support": 0.001890359168241966,
       "confidence": 0.01834862385321101,
       "lift": 6.470948012232416
     },
-    "Beverage": -2
+    "beverage": -2
   },
   "3408": {
-    "category": "Dessert",
-    "Dessert": -1,
-    "Entree": -1,
-    "Kids": {
+    "dessert": -1,
+    "entree": -1,
+    "kids": {
       "id": 3371,
       "support": 0.001890359168241966,
       "confidence": 0.6666666666666666,
       "lift": 6.470948012232416
     },
-    "Side": -2,
-    "Beverage": -2
+    "side": -2,
+    "beverage": -2
   },
   "3411": {
-    "category": "Dessert",
-    "Dessert": -1,
-    "Entree": -1,
-    "Kids": -2,
-    "Side": {
+    "dessert": -1,
+    "entree": -1,
+    "kids": -2,
+    "side": {
       "id": 1813,
       "support": 0.003780718336483932,
       "confidence": 0.10256410256410257,
       "lift": 3.3910256410256414
     },
-    "Beverage": {
+    "beverage": {
       "id": 1858,
       "support": 0.007561436672967864,
       "confidence": 0.20512820512820515,
@@ -364,43 +341,38 @@
     }
   },
   "3893": {
-    "category": "Dessert",
-    "Dessert": -1,
-    "Entree": -1,
-    "Kids": -2,
-    "Side": -2,
-    "Beverage": -2
+    "dessert": -1,
+    "entree": -1,
+    "kids": -2,
+    "side": -2,
+    "beverage": -2
   },
   "4307": {
-    "category": "Dessert",
-    "Dessert": -1,
-    "Entree": -1,
-    "Kids": -2,
-    "Side": -2,
-    "Beverage": -2
+    "dessert": -1,
+    "entree": -1,
+    "kids": -2,
+    "side": -2,
+    "beverage": -2
   },
   "4308": {
-    "category": "Dessert",
-    "Dessert": -1,
-    "Entree": -1,
-    "Kids": -2,
-    "Side": -2,
-    "Beverage": -2
+    "dessert": -1,
+    "entree": -1,
+    "kids": -2,
+    "side": -2,
+    "beverage": -2
   },
   "4751": {
-    "category": "Kids",
-    "Kids": -1,
-    "Entree": -1,
-    "Side": -2,
-    "Dessert": -2,
-    "Beverage": -2
+    "kids": -1,
+    "entree": -1,
+    "side": -2,
+    "dessert": -2,
+    "beverage": -2
   },
   "5143": {
-    "category": "Dessert",
-    "Dessert": -1,
-    "Entree": -1,
-    "Kids": -2,
-    "Side": -2,
-    "Beverage": -2
+    "dessert": -1,
+    "entree": -1,
+    "kids": -2,
+    "side": -2,
+    "beverage": -2
   }
 }

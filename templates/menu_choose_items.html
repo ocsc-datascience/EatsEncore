@@ -49,7 +49,7 @@
       <div class="card-body" style ="height: 320px">
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group text-center">
-            <button class="btn class_kids id="{{ item.id }}" name="{{item.name}}" description="{{ item.display_desc }}" img="{{item.img}}" type="button"  style="color: blue"><strong>Add Item</strong></button>
+            <button class="btn class_kids" id="{{ item.id }}" name="{{item.name}}" description="{{ item.display_desc }}" img="{{item.img}}" type="button"  style="color: blue"><strong>Add Item</strong></button>
           </div>
         </div>
         <p class="card-text"><strong>{{ item.name }}</strong> {{ item.display_desc }}</p>
@@ -63,6 +63,7 @@
 
 
 <!--Products: Entrees-->
+{% if age_group != "0" %}
 <a name="Entrées"></a><h4>Entrées</h4>
 <div class="row">
 {% for item in entrees %}
@@ -82,7 +83,7 @@
   </div>
 {% endfor %}
 </div>
-
+{% endif %}
 
 
 <!--Products: Side Dishes-->

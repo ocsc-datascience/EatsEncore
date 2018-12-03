@@ -73,6 +73,7 @@ def checkout():
                 res = db.session.query(pm.Product).filter(pm.Product.id == \
                                               int(selections[key])).first()
 
+                order[key]['id'] = str(selections[key])
                 order[key]['img'] = res.img
                 order[key]['name'] = res.name
                 order[key]['display_desc'] = res.name
@@ -140,10 +141,6 @@ def menu(age_group):
     loc_id = 1
 
     res = db.session.query(pm.Category).all()
-    for cat in res:
-        print(cat.name) 
-
-    
 
     #Entrees Call
     entree_cat = db.session.query(pm.Category)\
@@ -191,7 +188,7 @@ def menu(age_group):
 
 
 
-    #Beverages Call
+    #Kids Call
     kids_cat = db.session.query(pm.Category)\
                 .filter(pm.Category.name == 'Kids').first()
     
@@ -200,13 +197,19 @@ def menu(age_group):
             .filter(pm.Product.category_id == kids_cat.id).all()
 
 
+    # remove coffee, decaf, and tea from kids choices
+    bevs_filtered = []
+    for bev in beverage:
+        if bev.id not in [3070,3069,1854]:
+            bevs_filtered.append(bev)
+    
 
     if request.method == 'GET':
         return render_template('menu_choose_items.html',age_group=age_group,
                                entrees=entrees,
                                side = side,
                                dessert=dessert,
-                               beverage=beverage,
+                               beverage=bevs_filtered,
                                alcoholicBeverage=alcoholicBeverage,
                                kids=kids
                                )
