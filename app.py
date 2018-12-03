@@ -201,7 +201,6 @@ def menu(age_group):
 
 
 
-
     if request.method == 'GET':
         return render_template('menu_choose_items.html',age_group=age_group,
                                entrees=entrees,
@@ -211,6 +210,28 @@ def menu(age_group):
                                alcoholicBeverage=alcoholicBeverage,
                                kids=kids
                                )
+
+
+
+# filter recommendation by age group
+@app.route("/checkout/<age_group>",methods=['GET','POST'])
+def menu(age_group):
+
+    loc_id = 1
+
+    res = db.session.query(pm.Category).all()
+    for cat in res:
+        print(cat.name) 
+
+    
+
+    #Recommendations Call
+    recommendation_cat = db.session.query(pm.Category)\
+                .filter(pm.Category.name == 'Recommendation').first()
+    
+    recommendation = db.session.query(pm.Product).filter(pm.Product.location_id == \
+                                           int(loc_id))\
+            .filter(pm.Product.category_id == recommendation_cat.id).all()
 
 
 

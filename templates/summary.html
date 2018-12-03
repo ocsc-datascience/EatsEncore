@@ -19,11 +19,11 @@
   <div class="col-md-2">
     <div class="card mb-2 box-shadow">
       <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ order[key].img }}" data-holder-rendered="true">
-      <div class="card-body" style ="height: 410px">
+      <div class="card-body" style ="height: 120px">
         <div class="d-flex justify-content-between align-items-center">
           
         </div>
-        <p class="card-text"><strong>{{ order[key].name }}</strong> {{ order[key].display_desc }}</p>
+        <p class="card-text"><strong>{{ order[key].name }}</strong> <!-- {{ order[key].display_desc }} --></p>
         
       </div>
     </div>
@@ -59,9 +59,11 @@
                 
 <div class="col-xs-6 col-md-12 mt-3">
        <p>
-       	<!--ASK TEAM WHERE WE WANT THIS TO GO? PAGE THAT INCLUDES FINAL ORDER?-->
-        <button class="btn btn-primary " name="submit" type="submit" style="float: 
-       right">Start New Order</button></p> 
+       	<!--Orig version commented out ... hardcoded to go back to the start-->
+<!--         <button class="btn btn-primary " name="submit" type="submit" style="float: 
+       right">Start New Order</button></p>  -->
+       <button class="btn btn-primary " name="submit" type="submit" style="float: 
+       right"><a href="index.html">Start New Order</a></button></p> 
    </p> 
        <br></br>
     </div>
