@@ -1,0 +1,56 @@
+id,name,display_desc,category,img
+1813,French Fries,,Side,fries_french_fries.png
+1838,Green Beans,,Side,veg_green_beans_carrots.jpg
+1848,Kids Mac & Cheese,"served with Carrot Sticks, Apple Slices and choice of Beverage",Kids,mac-n-cheese.png
+1851,Smuckers Uncrustables,"served with Carrot Sticks, Apple Slices and choice of Beverage",Kids,Smuckers_Uncrustables.jpg
+1852,Bottled Water,,Beverage,bev_dasani.jpg
+1854,Hot Tea,,Beverage,bev_hot_tea.jpg
+1855,Chocolate Milk,,Beverage,bev_choclate-milk.jpg
+1856,Lowfat Milk,,Beverage,bev_milk.jpeg
+1858,Fountain Beverage,Assorted Coca-Cola® Offerings,Beverage,bev_fountain_beverages.jpeg
+2207,Strawberry Parfait,,Dessert,dessert_strawberry_parfait.jpeg
+2208,Chocolate Mousse,,Dessert,dessert_chocolate_mousse.png
+2210,1/3 lb Angus Bacon Cheeseburger,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,burger_angus_bacon_cheeseburger.jpeg
+2218,Strawberry Lemonade Slushy,featuring odwalla®,Beverage,bev_strawberry_lemonade_slush.jpeg
+2221,Steak Fries,,Side,fries-transparent-steak.png
+2222,Fire-roasted Corn Medley,,Side,veg_corn_medley.png
+2234,Hummus and Flatbread,Hummus served with Flatbread,Side,hummus-flatbread.jpg
+2236,Mediterranean Salad,Mediterranean Salad,Entree,salad_mediterranean-salad.png
+2237,Chicken Mediterranean Salad,tossed in a Mediterranean Vinaigrette and served with Hummus and Flatbread,Entree,salad_mediterranean_salad_chicken.png
+2238,Chicken Club,"served with Coleslaw and choice of Green Beans, Apple Slices or French Fries",Entree,sandwich_chicken_club.jpg
+2243,Kids Cheeseburger,served with choice of Sides and Beverage,Kids,burger_cheeseburger.jpeg
+2244,Kids Turkey Sandwich,served with choice of Sides and Beverage,Kids,sandwich_turkey_sandwich.png
+2245,Olaf Chocolate Cupcake,Chocolate Cupcake,Dessert,dessert_chocolate_cupcake.jpeg
+2251,smartwater,,Beverage,bev_smartwater.jpeg
+2255,Bud Light,,Alcoholic Beverage,bev_Bud_Light-logo.png
+2256,Yuengling,,Alcoholic Beverage,bev_yuengling_logo.png
+2257,Beso Del Sol Sangria,,Alcoholic Beverage,bev_beso_del_sol_sangria.png
+2293,Woodbridge Chardonnay,,Alcoholic Beverage,bev_woodbridge.jpeg
+2294,Woodbridge Cabernet,,Alcoholic Beverage,bev_woodbridge.jpeg
+2307,1/3 lb Angus Cheeseburger,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,burger_cheeseburger.jpeg
+2716,Chicken Strips,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,fried_chicken-strips.png
+3020,Kids Chicken Strips,served with choice of Sides and Beverage,Kids,fried_chicken-strips.png
+3036,Shrimp Platter,served with Steak Fries and Coleslaw,Entree,fried_shrimp.png
+3037,Fish & Shrimp Platter,served with Steak Fries and Coleslaw,Entree,fried_seafood_platter_fish_shrimp.png
+3038,"Shrimp, Fish, & Chicken Platter",served with Steak Fries and Coleslaw,Entree,fried_shrimp_fish_chicken.png
+3039,Happy Daze,"Parrot Bat Coconut Rum, Melon Liqueur, Banana Liqueur and Grenadine with Orange and Pineapple Juice",Alcoholic Beverage,bev_cocktails.png
+3069,Regular Coffee,,Beverage,bev_coffee.jpg
+3070,Decaf Coffee,,Beverage,bev_coffee.jpg
+3265,Vegan Burger,served with French Fries,Entree,burger_vegan.png
+3285,Southwest BBQ Burger,served with Signature Southwestern Steak Fries dusted in Chili-lime Seasoning,Entree,burger_southwest_BBQ.jpg
+3288,BBQ Rib Platter,served with Coleslaw and French Fries,Entree,Ribs.png
+3289,Southwestern Steak Fries,topped with Chipotle Aïoli and Queso Fresco,Side,fries_southwest_steak.jpg
+3370,Braised Beef and Enchilada,served with a Roasted Corn and Cheese Enchilada,Entree,mex_beef_enchiladas.jpeg
+3371,Kids BBQ Quesadilla,"served with Steak Fries, Roasted Corn and choice of Beverage",Kids,mex_quesadilla.png
+3389,Shrimp Teriyaki Bowl,Stir-fried Shrimp and Vegetables tossed in a House-made Teriyaki Sauce,Entree,asian_shrimp-terriyaki_bowl.jpg
+3390,Teriyaki Vegetable Bowl,Stir-fried Vegetables tossed in a House-made Teriyaki Sauce,Entree,asian_Vegetable-Teriyaki-Bowl.png
+3408,Chocolate Banana Almond Crisp,,Dessert,dessert_chocolate_banana_almond.jpg
+3411,Toy Story Land Cupcake,Celebrate the opening of Toy Story Land with this Chocolate Cupcake topped with Vanilla Buttercream,Dessert,dessert_chocolate_cupcake.jpeg
+3825,Watermelon Margarita,Patron Tequila with flavors of Watermelon,Alcoholic Beverage,bev_cocktails.png
+3893,Peanut Butter Chocolate Cake,Peanut Butter and Chocolate Cake with Chocolate Ganache,Dessert,dessert_peanut_butter_chocolate_cake.png
+4307,Cookies,,Dessert,dessert_cookies.png
+4308,Brownie,,Dessert,dessert_brownies.jpeg
+4751,Kids Hamburger,"served with Carrots, Apple Slices and choice of Beverage",Kids,burger.jpeg
+4775,1/3 lb Angus Bacon Burger,"served with your choice of fresh Green Beans, Apple Slices or French Fries",Entree,burger_angus_bacon_cheeseburger.jpeg
+5143,Chocolate & Orange Parfait,layers of Chocolate Cake and Orange Cream,Dessert,dessert_chocolate_orange_parfait.jpg
+5446,Winterberry Margarita,crafted with Silver Patrón Tequila,Alcoholic Beverage,bev_cocktails.png

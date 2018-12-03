@@ -20,7 +20,7 @@ df1 = pd.read_csv(if1)
 # location 1:
 #xdel_list = [5141,4826]
 #xreassing_list = [ (3275,3273)]
-
+df1 = df1.loc[ df1['items_id'] != 5388 ]
 df1 = df1.loc[ df1['items_id'] != 4798 ]
 df1 = df1.loc[ df1['items_id'] != 4762 ]
 df1 = df1.loc[ df1['items_id'] != 4759 ]
@@ -69,7 +69,7 @@ xl = [2252, 2253]
 xlist.append(xl)
 xl = [2208, 3894, 5445]
 xlist.append(xl)
-xl = [2210, 4274, 4743, 4766, 4771, 4780, 4789, 4797, 4822]
+xl = [2210, 4724, 4743, 4766, 4771, 4780, 4789, 4797, 4822]
 xlist.append(xl)
 xl = [2236, 2304]
 xlist.append(xl)
@@ -80,6 +80,8 @@ xlist.append(xl)
 xl = [2243, 4731, 4747, 4755]
 xlist.append(xl)
 xl = [2244, 4730, 4744, 4746, 4754, 4794, 4804, 4821, 4823]
+xlist.append(xl)
+xl = [3411, 3236]
 xlist.append(xl)
 xl = [2245, 3410]
 xlist.append(xl)
@@ -95,7 +97,7 @@ xl = [3037, 4841]
 xlist.append(xl)
 xl = [3038, 4786, 4840]
 xlist.append(xl)
-xl = [3265, 3287, 4725, 4767, 4772, 4776, 4790, 4825, 4837]
+xl = [3265, 3287, 4725, 4767, 4772, 4776, 4790, 4825, 4837, 4835]
 xlist.append(xl)
 xl = [3285, 4838]
 xlist.append(xl)
@@ -153,7 +155,7 @@ xl = [1838, 3407]
 xlist.append(xl)
 xl = [1848, 4304, 4311, 3274, 3276, 4749, 4814, 4825]
 xlist.append(xl)
-xl = [1851, 3273, 4752, 4757, 4813, 4824]
+xl = [1851, 3273, 4752, 4753, 4757, 4813, 4824]
 xlist.append(xl)
 xl = [1852, 2246]
 xlist.append(xl)
@@ -173,6 +175,8 @@ xl = [4307, 4319, 4734, 4736, 4739, 4740]
 xlist.append(xl)
 xl = [4308, 4735, 4742, 4796, 4816]
 xlist.append(xl)
+
+
 
 for xl in xlist:
     for x in xl:

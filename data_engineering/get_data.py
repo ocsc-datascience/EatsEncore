@@ -29,11 +29,12 @@ for prod in prods:
     xd['name'] = prod.name
     xd['display_desc'] = prod.display_desc
     xd['category'] = prod.category.name
-    xd['location'] = prod.location.name
+    xd['img'] = prod.img
+    #xd['location'] = prod.location.name
     
     dlist.append(xd)
 
 
 df = pd.DataFrame(dlist)
-df.to_csv('products.csv',index=False,header=True)
+df.to_csv('products_clean.csv',index=False,header=True)
 
