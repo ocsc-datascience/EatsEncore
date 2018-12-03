@@ -214,24 +214,24 @@ def menu(age_group):
 
 
 # filter recommendation by age group
-@app.route("/checkout/<age_group>",methods=['GET','POST'])
-def menu(age_group):
+# @app.route("/checkout/<age_group>",methods=['GET','POST'])
+# def menu(age_group):
 
-    loc_id = 1
+#     loc_id = 1
 
-    res = db.session.query(pm.Category).all()
-    for cat in res:
-        print(cat.name) 
+#     res = db.session.query(pm.Category).all()
+#     for cat in res:
+#         print(cat.name) 
 
     
 
-    #Recommendations Call
-    recommendation_cat = db.session.query(pm.Category)\
-                .filter(pm.Category.name == 'Recommendation').first()
+#     #Recommendations Call
+#     recommendation_cat = db.session.query(pm.Category)\
+#                 .filter(pm.Category.name == 'Recommendation').first()
     
-    recommendation = db.session.query(pm.Product).filter(pm.Product.location_id == \
-                                           int(loc_id))\
-            .filter(pm.Product.category_id == recommendation_cat.id).all()
+#     recommendation = db.session.query(pm.Product).filter(pm.Product.location_id == \
+#                                            int(loc_id))\
+#             .filter(pm.Product.category_id == recommendation_cat.id).all()
 
 
 
