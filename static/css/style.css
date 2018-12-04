@@ -51,9 +51,12 @@ img.food-img {
 /* button color
 -------------------------------------------------- */
 .btn-primary {
-    background-color: #ff8000; /* Orange */
+    background-color: #ff8000 !important; /* Orange */
     border: none;
     color: white;
+    hover {
+      background-color: #ff8000 !important;
+    };
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
