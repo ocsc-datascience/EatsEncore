@@ -41,7 +41,7 @@ def index():
 
 
 @app.route("/summary",methods=['GET','POST'])
-def checkout():
+def summary():
 
     form = SummaryForm()   
 
