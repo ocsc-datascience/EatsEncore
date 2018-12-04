@@ -241,12 +241,12 @@ def menu(age_group):
 
     if request.method == 'GET':
         return render_template('menu_choose_items.html',age_group=age_group,
+                               kids=kids,
                                entrees=entrees,
                                side = side,
                                dessert=dessert,
                                beverage=bevs_filtered,
                                alcoholicBeverage=alcoholicBeverage,
-                               kids=kids
                                )
 
 

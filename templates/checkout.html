@@ -4,18 +4,12 @@
 
  <div class="row">
 
- <div class="col-xs-6 col-md-12 mt-3">
+ 	<div class="col-xs-3 col-md-12 mt-3">
       <h1>Review Order</h1>
-      </p>
-       <p>
-       	<!--This button goes to a summary page that repeats full order-->
-<!--        	<button class="btn btn-primary " name="submit" type="submit" style="float: 
-       right">Submit Order</button></p>  -->
-       <br></br>
     </div>
 </div>
 
-<BR></BR>
+<BR>
 <h3>Your Selections</h3>
 <BR>
 
@@ -35,10 +29,15 @@
 </div>
 
 
-<p></p>
 <BR></BR>
 <BR></BR>
-<h3>Enhance Your Meal</h3>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="recosHeader">
+  <h3>Enhance Your Meal</h3>
+   <p>These suggestions are based on a market basket analysis of the most common purchases that align to your initial selection(s).</p> 
+</div>
+
+
 <BR>
 
 <div class="row">
@@ -60,27 +59,40 @@
 {% endfor %}
 </div>
 
-                
-<form id="summaryform" method="POST" action="/summary">
-  <input type="hidden" id="order" name="order" value="{}">
-  <!-- <input type="hidden" id="age_group" name="age_group" value={{ age_group }}> -->
-  <div class="form-row" style="float: right;">
-    <div class="form-group col-md-2">
-      <button id="mysubmit" class="btn btn-primary">Go To Summary</button>
-    </div>
+       <form id="summaryform" method="POST" action="/summary">
+        <input type="hidden" id="order" name="order" value="{}">
+        <div class="form-row" style="float: right;">
+          <div class="form-group col-md-2">
+            <button id="mysubmit" class="btn btn-primary">Go To Summary</button>
+          </div>
+        </div>
+        </form>
   </div>
-</form>
+</div>
+        <br>  
+        <br>
+        <br>
+
+
 
 
 <!-- Begin JS for capturing add-on items (based on recommendations) -->
 <script>
-
 var orderObject = {{ order|tojson }};
 var recos = {{ recommendations|tojson }};
 console.log(orderObject);
 console.log(recos);
 
 var orderSummary = {};
+
+
+// Make h3 Recommendations dynamic in relation to if there is/isn't content
+if($('.class_recommend').length == 0){  // return's true if element is present
+  // show or hide another div
+  $('.recosHeader').hide();
+}
+
+
 
 
 //Recommendation selection
@@ -113,11 +125,12 @@ d3.selectAll(".class_recommend").on('click', function()
       console.log(orderObject)
 
      /* d3.select(this).attr("id").style("color", "grey");*/
-      d3.select(this).style("color", "grey");
+      d3.select(this).style("color", "grey").disabled=true;
 
 
     });
 
+/* Submitting the order to the Summary page */
 d3.selectAll("#mysubmit")
       .on("click", function () {
         d3.event.stopPropagation();
