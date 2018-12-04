@@ -40,6 +40,23 @@ def index():
     return render_template("index.html",xpage="index")
 
 
+@app.route("/summary",methods=['GET','POST'])
+def checkout():
+
+    form = SummaryForm()   
+
+    if request.method == 'GET':
+        return redirect(url_for('index'))
+
+    if request.method == 'POST':
+        order = json.loads(form.order.data)
+
+        print(order) 
+
+        return render_template("summary.html",xpage="summary",
+                           order=order)
+
+
 # menu order cart > checkout
 @app.route("/checkout",methods=['GET','POST'])
 def checkout():
@@ -89,6 +106,12 @@ def checkout():
             md['id'] = rec
             md['img'] = res.img
             md['name'] = res.name
+            if res.category.name == 'Alcoholic Beverage':
+                md['category'] = 'alcohol'
+            else:
+                md['category'] = res.category.name.lower()
+
+
             md['display_desc'] = res.name
             
             recommendations.append(md)
@@ -96,7 +119,7 @@ def checkout():
         print(recommendations)
             
     return render_template("checkout.html",xpage="checkout",
-                           order=order,ordercats=ordercats,
+                           order=dict(order),ordercats=ordercats,
                            recommendations=recommendations)
 
 # main nav > stats
@@ -219,13 +242,7 @@ def menu(age_group):
 # recommendations added to cart
 # @app.route("/summary",methods=['GET','POST'])
 
-#     #Recommendations Call
-#     recommendation_cat = db.session.query(pm.Category)\
-#                 .filter(pm.Category.name == 'Recommendation').first()
-    
-#     recommendation = db.session.query(pm.Product).filter(pm.Product.location_id == \
-#                                            int(loc_id))\
-#             .filter(pm.Product.category_id == recommendation_cat.id).all()
+
 
 
 

@@ -9,5 +9,7 @@ class MenuForm(FlaskForm):
     age_group = IntegerField("age_group",validators = [])
     selections = TextField("selections", validators = [])
 
+class SummaryForm(FlaskForm):
+    order = TextField("order", validators = [])
 
 
