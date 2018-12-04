@@ -167,6 +167,10 @@ xdf.loc[ xdf['items_id'] == 3273, 'items_name' ] =\
                 "Smucker's® Uncrustables® Sandwich"
 xdf.loc[ xdf['items_id'] == 2245, 'display_description'] =\
                 "Chocolate Cupcake"
+xdf.loc[ xdf['items_id'] == 2245, 'items_name'] =\
+                "Snowman Cupcake"
+xdf.loc[ xdf['items_id'] == 3411, 'items_name'] =\
+                "Sparkles Cupcake"
 xdf.loc[ xdf['items_id'] == 4730, 'display_description'] =\
         "served on an Allergy-friendly Bun with Carrots, "\
         "Apple Slices and choice of Beverage"
