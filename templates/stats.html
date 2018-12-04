@@ -2,18 +2,255 @@
 {% block content %}
 <!-- your code start -->
 
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EatsEncore Analytics</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <style> 
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+    color: whitesmoke;
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+  }
+
+  h2 {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  h4 {
+    color: black;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  #icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+  #time_of_day {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+  #day_of_week {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+  #lunch_dinner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+  #item_category {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
+  .order_button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+</style>
+</head>
+
+<!--Main Body-->
+<body>
+<div class="row">
+    <div class="col-md-12 text-left mt-3">
+      <h1>When Do Users Order?</h1>
+      <BR>
+      <!-- Plot 1-->
+      <h2>Order Volume by Time of Day</h2><br>
+      <div id="time_of_day" style="width:1000px;height:450px;"></div>
+      <script>
+        plot_1 = document.getElementById('time_of_day');
+      var trace1 = {
+   x: ["9AM", "10AM", "11AM", "12PM","1PM","2PM","3PM","4PM","5PM","6PM","7PM","8PM"],
+   y: [1331, 11078, 19650, 16711,9758,4522,2085,2033,3225,2363,580,130],
+   type: "line"
+ };
+ var data = [trace1];
+
+ var layout = {
+  xaxis: { title: "Time Of Day"},
+  yaxis: { title: "Units Sold"}
+ };
+ Plotly.newPlot("time_of_day", data, layout);
+  </script>
+
+      <!-- Plot 2-->
+      <br><br><h2>Order Volume by Day of Week</h2>
+      <div id="day_of_week" style="width:1200px;height:400px;"></div>
+      <script>
+        plot_2 = document.getElementById('day_of_week');
+        var data = [
+      { x: [2225,1642,1608,1755,2279,2617,2855],
+        y: ['Monday ', 'Tuesday ', 'Wednesday ','Thursday ','Friday ','Saturday ','Sunday '],
+        type: 'bar',
+        orientation: 'h' }        
+      ];
+      var layout = {
+        xaxis:{ title: "Units Sold"},
+        yaxis:{
+          autorange:'reversed'
+          }
+      }
+    Plotly.newPlot('day_of_week', data,layout);
+      </script>
+      
+      <!-- Plot 3-->
+      <br><br><h2>Order Volume (Units Sold) by Lunch vs Dinner</h2>
+      <div id="lunch_dinner"></div>
+      <script>
+        plot_3 = document.getElementById('lunch_dinner');
+     var trace1 = {
+        labels: ["Dinner", "Lunch"],
+        values: [9603,63863],
+        type: 'pie'
+        };
+      var data = [trace1];
+      var layout = {
+          showlegend: false
+        };
+      Plotly.newPlot("lunch_dinner", data, layout);
+    </script>
+    
+      <BR><BR><BR><BR><BR><BR>
+      <h1>What Do Users Order?</h1>
+      <BR>
+      <!-- Plot 4-->
+      <h2>Units Sold by Item Category</h2><br>
+      <div id="item_category" style="width:1000px;height:400px;"></div>
+      <script>
+      plot_4=document.getElementById('plot_4')
+      var trace1 = {
+      x: ["Entrée", "Beverage", "Kids", "Alcohol","Dessert", "Side"],
+      y: [36009, 19932, 9810, 3747, 2604, 1364],
+      type: "bar"
+    };
+
+     var data = [trace1];
+
+     var layout = {
+      xaxis: { title: "Item Category"},
+      yaxis: { title: "Units Sold"}
+    };
+
+     Plotly.newPlot("item_category", data, layout);
+
+      </script>
+
+    <br><br><br><h2>Most Popular Item in Each Category</h2><br>
     <div class="row">
-      <div class="col-md-12 text-left mt-3">
-        <h1>Stats</h1>
-        <BR>
-        <BR>
+      <div class="col-md-2">
+        <h3>Entrée</h3>
+        <h4>Mediterranean Salad with Chicken</h4><br>
+        <img id="icon" src="static/img/salad_mediterranean_salad_chicken.png" style="height: 85px; display: block;" alt="Mediterranean Salad with Chicken">
+        <br>
+      </div>
+      <div class="col-md-2">
+        <h3>Beverage</h3>
+        <h4>Fountain Beverage (L)</h4>
+        <br>
+        <img id="icon" src="static/img/bev_fountain_beverages.jpeg" style="height: 100px; display: block;" alt="Mediterranean Salad with Chicken">
+        <br>
+      </div>
+      <div class="col-md-2">
+        <h3>Kids</h3>
+        <h4>Chicken Strips</h4>
+        <br>
+        <img id="icon"  src="static/img/fried_chicken-strips.png" style="height: 100px; display: block;" alt="Mediterranean Salad with Chicken">
+        <br>
+      </div>
+      <div class="col-md-2">
+        <h3>Alcohol</h3>
+        <h4>Happy Daze</h4>
+        <br>
+        <img id="icon"  src="static/img/happy_daze.jpg" style="height: 100px; display: block;" alt="Mediterranean Salad with Chicken">
+        <br>
+      </div>
+      <div class="col-md-2">
+        <h3>Dessert</h3>
+        <h4>Cupcake</h4>
+        <br>
+        <img id="icon"  src="static/img/dessert_chocolate_cupcake.jpeg" style="height: 100px; display: block;" alt="Mediterranean Salad with Chicken">
+        <br>
+      </div>
+      <div class="col-md-2">
+        <h3>Side</h3>
+        <h4>French Fries</h4>
+        <br>
+        <img id="icon"  src="static/img/fries_french_fries.png" style="height: 100px; display: block;" alt="Mediterranean Salad with Chicken">
+        <br>
       </div>
     </div>
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script>
-    $( "#stats" ).addClass( "active" );
-  </script>      
+      <BR><BR><BR><BR><BR><BR>
+      <h1>How Much Do Users Order?</h1>
+      <BR>
+        <div class="container">
+          <div class="row">
+        <div class="col-md-4">
+          <br>
+          <h3>Average Order Volume</h3>
+          <h2>$44.83</h2>
+          <br>
+        </div>
+        <div class="col-md-4">
+          <img id="icon" src="static/img/empty_cart.png" style="height: 100px; display: block;">
+          <br>
+          <h3>Average Cart Size</h3>
+          <h2>4.9 Items</h2>
+          <br>
+        </div>
+        <div class="col-md-4">
+          <img id="icon" src="static/img/Cart_Full.png" style="height: 100px; display: block;">
+          <br>
+          <h3>Biggest Order Volume</h3>
+          <h2>39 Items</h2>
+        </div>
+        <div><BR><BR><BR><BR><BR><BR>
+          <p>* Note: Data based on 07/31/2018 through 11/25/2018</p>
+        </div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script>
+  $( "#stats" ).addClass( "active" );
+</script>      
+
+
 <!-- your code end -->
 {% endblock %}
