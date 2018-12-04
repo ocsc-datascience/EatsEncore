@@ -44,17 +44,29 @@ def index():
 def summary():
 
     form = SummaryForm()   
+    print("Hi!")
 
     if request.method == 'GET':
         return redirect(url_for('index'))
 
     if request.method == 'POST':
+        #print(form.order.data)
         order = json.loads(form.order.data)
+        order_copy = order.copy()
 
-        print(order) 
+        print('original order:')
+        print('-'*10)
+        print(order)
+        for each in order:
+            if len(order[each].values()) == 0:
+                order_copy.pop(each)
+#        order = None
+        print('Now the order is :')
+        print('-'*10)
+        print(order_copy)
 
         return render_template("summary.html",xpage="summary",
-                           order=order)
+                           order=order_copy)
 
 
 # menu order cart > checkout

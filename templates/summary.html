@@ -15,20 +15,20 @@
 </div>
 
 
-{% for key in ordercats %}
+{% for key in order %}
   <div class="col-md-2">
     <div class="card mb-2 box-shadow">
-      <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="/static/img/{{ order[key].img }}" data-holder-rendered="true">
+      <img class="card-img-top food-img"  style="height: 110px; width: 100%; display: block;" src="/static/img/{{ order[key].img }}" id="{{ order[key].id }}" data-holder-rendered="true">
       <div class="card-body" style ="height: 120px">
-        <div class="d-flex justify-content-between align-items-center">
-          
+        <div class="d-flex justify-content-between align-items-center">  
         </div>
-        <p class="card-text"><strong>{{ order[key].name }}</strong> <!-- {{ order[key].display_desc }} --></p>
-        
+        <p class="card-text"><strong>{{ order[key].name }}</strong></p>
       </div>
     </div>
   </div>
 {% endfor %}
+
+
 
 
 <p></p>
