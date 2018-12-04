@@ -20,7 +20,7 @@ id,name,display_desc,category,img
 2238,Chicken Club,"served with Coleslaw and choice of Green Beans, Apple Slices or French Fries",Entree,sandwich_chicken_club.jpg
 2243,Kids Cheeseburger,served with choice of Sides and Beverage,Kids,burger_cheeseburger.jpeg
 2244,Kids Turkey Sandwich,served with choice of Sides and Beverage,Kids,sandwich_turkey_sandwich.png
-2245,Olaf Chocolate Cupcake,Chocolate Cupcake,Dessert,dessert_chocolate_cupcake.jpeg
+2245,Snowman Cupcake,Chocolate Cupcake,Dessert,dessert_chocolate_cupcake.jpeg
 2251,smartwater,,Beverage,bev_smartwater.jpeg
 2255,Bud Light,,Alcoholic Beverage,bev_Bud_Light-logo.png
 2256,Yuengling,,Alcoholic Beverage,bev_yuengling_logo.png
@@ -45,7 +45,7 @@ id,name,display_desc,category,img
 3389,Shrimp Teriyaki Bowl,Stir-fried Shrimp and Vegetables tossed in a House-made Teriyaki Sauce,Entree,asian_shrimp-terriyaki_bowl.jpg
 3390,Teriyaki Vegetable Bowl,Stir-fried Vegetables tossed in a House-made Teriyaki Sauce,Entree,asian_Vegetable-Teriyaki-Bowl.png
 3408,Chocolate Banana Almond Crisp,,Dessert,dessert_chocolate_banana_almond.jpg
-3411,Toy Story Land Cupcake,Celebrate the opening of Toy Story Land with this Chocolate Cupcake topped with Vanilla Buttercream,Dessert,dessert_chocolate_cupcake.jpeg
+3411,Sparkles Cupcake,Celebrate the opening of Toy Story Land with this Chocolate Cupcake topped with Vanilla Buttercream,Dessert,dessert_chocolate_cupcake.jpeg
 3825,Watermelon Margarita,Patron Tequila with flavors of Watermelon,Alcoholic Beverage,bev_cocktails.png
 3893,Peanut Butter Chocolate Cake,Peanut Butter and Chocolate Cake with Chocolate Ganache,Dessert,dessert_peanut_butter_chocolate_cake.png
 4307,Cookies,,Dessert,dessert_cookies.png

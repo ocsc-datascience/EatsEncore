@@ -167,10 +167,6 @@ xdf.loc[ xdf['items_id'] == 3273, 'items_name' ] =\
                 "Smucker's® Uncrustables® Sandwich"
 xdf.loc[ xdf['items_id'] == 2245, 'display_description'] =\
                 "Chocolate Cupcake"
-xdf.loc[ xdf['items_id'] == 2245, 'items_name'] =\
-                "Snowman Cupcake"
-xdf.loc[ xdf['items_id'] == 3411, 'items_name'] =\
-                "Sparkles Cupcake"
 xdf.loc[ xdf['items_id'] == 4730, 'display_description'] =\
         "served on an Allergy-friendly Bun with Carrots, "\
         "Apple Slices and choice of Beverage"
@@ -184,10 +180,11 @@ xdf.loc[ xdf['items_id'] == 4794, 'display_description'] =\
         "Apple Slices and choice of Beverage"
 
 
-
 # more name fixing
 xdf = fix_product_names(xdf,df_prod)
 
+
+xdf = xdf.drop_duplicates()
 
 # remove duplicates, hand-curated by Charla
 xlist = []
@@ -310,11 +307,22 @@ for xl in xlist:
     for x in xl:
         xdf.loc[ xdf['items_id'] == x, 'items_id' ] = xl[0]
 
+        
+xdf.loc[ xdf['items_id'] == 2245, 'items_name'] =\
+                "Snowman Cupcake"
+xdf.loc[ xdf['items_id'] == 3411, 'items_name'] =\
+                "Sparkles Cupcake"
+
+
 xdf = xdf.drop_duplicates()
 xdf = xdf.drop_duplicates(subset='items_id',keep='first')
 
+
+
 # more cleaning
 xdf = fix_price_issues(xdf)
+
+
 
 xdf = assign_image(xdf,df_img)
 
