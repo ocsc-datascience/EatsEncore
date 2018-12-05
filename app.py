@@ -44,8 +44,9 @@ def index():
 def summary():
 
     form = SummaryForm()   
-    print("Hi!")
-
+    
+    cats = ['entree','kids','side','dessert','beverage','alcohol']
+    
     if request.method == 'GET':
         return redirect(url_for('index'))
 
@@ -66,7 +67,7 @@ def summary():
         print(order_copy)
 
         return render_template("summary.html",xpage="summary",
-                           order=order_copy)
+                               order=order_copy,cats=cats)
 
 
 # menu order cart > checkout
