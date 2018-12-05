@@ -14,39 +14,12 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
     <style> 
-
-  #icon {
+    #icon {
     display: block;
     margin-left: auto;
     margin-right: auto;
     }
-
-  #time_of_day {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
-
-  #day_of_week {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
-
-  #lunch_dinner {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
-
-  #item_category {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
-  
-  
-</style>
+  </style>
 </head>
 
 <!--Main Body-->
@@ -72,7 +45,9 @@
             x: ["9AM", "10AM", "11AM", "12PM","1PM","2PM","3PM","4PM","5PM","6PM","7PM","8PM"],
             y: [1331, 11078, 19650, 16711,9758,4522,2085,2033,3225,2363,580,130],
             type: "line",
-            borderColor: "rgb(75, 192, 192)",
+            line: {
+              color: "FFA500"
+            }
           };
 
           var data = [trace1];
@@ -81,20 +56,23 @@
             xaxis: { title: "Time Of Day", },
             yaxis: { title: "Units Sold", borderColor: "#FFA500"}
           };
+
           Plotly.newPlot("time_of_day", data, layout);
         </script>
 
       <!-- Plot 2: Horizontal Bar Chart-->
       <br><br><h3 style="color: #C0C0C0">Order Volume by Day of Week</h3>
-      
+
       <div id="day_of_week" style="width:1200px;height:400px;"></div>
       <script>
         plot_2 = document.getElementById('day_of_week');
-        var data = [
-      { x: [2225,1642,1608,1755,2279,2617,2855],
+        var data = [{
+        x: [2225,1642,1608,1755,2279,2617,2855],
         y: ['Monday ', 'Tuesday ', 'Wednesday ','Thursday ','Friday ','Saturday ','Sunday '],
         type: 'bar',
-        orientation: 'h' }        
+        orientation: 'h',
+        color: "orange"
+      } 
       ];
       var layout = {
         xaxis:{ title: "Units Sold"},
@@ -102,11 +80,13 @@
           autorange:'reversed'
           }
       }
+
+
     Plotly.newPlot('day_of_week', data,layout);
       </script>
       
 
-      <!-- Plot 3-->
+      <!-- Plot 3: Pie Chart-->
       <br><br><h3 style="color: #C0C0C0">Order Volume (Units Sold) by Lunch vs Dinner</h3>
       <div id="lunch_dinner"></div>
       <script>
@@ -114,12 +94,22 @@
      var trace1 = {
         labels: ["Dinner", "Lunch"],
         values: [9603,63863],
-        backgroundColor: ["#0074D9", "#FF4136"],
-        type: 'pie'
+        /*backgroundColor: ["#0074D9", "#FF4136"],*/
+        type: 'pie',
+        colors: {
+          segments: [
+            "#FFA500", "#C0C0C0"
+          ]
+        },
         };
       var data = [trace1];
       var layout = {
-          showlegend: false
+          showlegend: false,
+          colors: {
+          segments: [
+            "#FFA500", "#C0C0C0"
+          ]
+        },
         };
       Plotly.newPlot("lunch_dinner", data, layout);
     </script>

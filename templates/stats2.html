@@ -1,0 +1,58 @@
+{% extends "index_core.html" %}
+{% block content %}
+<!-- your code start -->
+<div class="row">
+  <div class="col-md-12 text-left mt-3">
+    <h1 style="color: grey">Diving Into the Data</h1>
+    <BR>
+    <BR>
+  </div>
+</div>
+
+<div class="row">
+	<div class="col-md-12 text-left mt-3">
+		<h2 style="color: orange">When Do Users Order?</h2>
+		<BR>
+		<!-- Plot 1: Line Chart--> 
+		<h3 style="color: #C0C0C0">Order Volume by Time of Day</h3>
+
+
+		<!-- Plot 2: Bar Chart-->
+		<script>
+		var data = [2225,1642,1608,1755,2279,2617,2855];
+
+		// Setting the dimensions for the SVG container
+		var svgHeight = 600;
+		var svgWidth = 400;
+
+		var svg = d3
+		.select("#svg-area")
+		.append("svg")
+		.attr("height", svgHeight)
+		.attr("width", svgWidth);
+
+	var svgGroup = svg.append("g")
+	.attr("transform", "translate(50, 100)");
+
+// Selects all rectangles currently on the page - which is none - and binds our dataset to them. If there are no rectangles, it will append one for each piece of data.
+svgGroup.selectAll("rect")
+  .data(data)
+  .enter()
+  .append("rect")
+  .attr("fill", "#FFA500")
+  .attr("width", 50)
+  .attr("height", function(data) {
+    return data * 10;
+  })
+  .attr("x", function(data, index) {
+    return index * 60;
+  })
+  .attr("y", function(data) {
+    return 600 - data * 10;
+  })
+  .attr("class", "bar");
+  </script>
+
+
+<!-- your code end -->
+{% endblock %}
