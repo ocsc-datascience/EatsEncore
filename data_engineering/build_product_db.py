@@ -165,6 +165,11 @@ xdf.loc[ xdf['items_id'] == 2253, 'items_id' ] = 2252
 xdf.loc[ xdf['items_id'] == 3275, 'items_id' ] = 3273
 xdf.loc[ xdf['items_id'] == 3273, 'items_name' ] =\
                 "Smucker's® Uncrustables® Sandwich"
+
+xdf.loc[ xdf['items_id'] == 3411, 'display_description'] = \
+        "Treat yourself with this Chocolate "\
+        "Cupcake topped with Vanilla Buttercream"
+
 xdf.loc[ xdf['items_id'] == 2245, 'display_description'] =\
                 "Chocolate Cupcake"
 xdf.loc[ xdf['items_id'] == 4730, 'display_description'] =\
@@ -312,6 +317,10 @@ xdf.loc[ xdf['items_id'] == 2245, 'items_name'] =\
                 "Snowman Cupcake"
 xdf.loc[ xdf['items_id'] == 3411, 'items_name'] =\
                 "Sparkles Cupcake"
+
+xdf.loc[ xdf['items_id'] == 3411, 'display_description'] = \
+        "Treat yourself with this Chocolate "\
+        "Cupcake topped with Vanilla Buttercream"
 
 
 xdf = xdf.drop_duplicates()
