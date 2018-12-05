@@ -82,29 +82,6 @@
             yaxis: { title: "Units Sold", borderColor: "#FFA500"}
           };
           Plotly.newPlot("time_of_day", data, layout);
-
-
-          new Chart(document.getElementById("chartjs-0"),{
-            "type":"line",
-            "data":{
-              "labels":[
-              "January",
-              "February",
-              "March",
-              "April",
-              "May",
-              "June",
-              "July"
-              ],
-            "datasets":[{
-              "label":"My First Dataset",
-              "data":[
-              65,59,80,81,56,55,40
-              ],
-              "fill":false,
-              "borderColor":
-              "rgb(75, 192, 192)",
-              "lineTension":0.2}]},"options":{}});
         </script>
 
       <!-- Plot 2: Horizontal Bar Chart-->
@@ -295,6 +272,8 @@
   crossorigin="anonymous"></script>
 <script>
   $( "#stats" ).addClass( "active" );
+
+
 </script>      
 
 
