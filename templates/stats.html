@@ -52,36 +52,62 @@
 <!--Main Body-->
 <body>
   <div class="row">
-      <div class="col-md-12 text-left mt-3">
-        <h1 style="color: grey ">Diving Into the Data</h1>
-        <BR>
-        <BR>
-      </div>
+    <div class="col-md-12 text-left mt-3">
+      <h1 style="color: grey ">Diving Into the Data</h1>
+      <BR>
+      <BR>
     </div>
-    <div class="row">
+  </div>
+
+  <div class="row">
     <div class="col-md-12 text-left mt-3">
       <h2 style="color: orange">When Do Users Order?</h2>
       <BR>
-      <!-- Plot 1-->
-      <h3 style="color: #C0C0C0">Order Volume by Time of Day</h3><br>
-      <div id="time_of_day" style="width:1000px;height:450px;"></div>
-      <script>
-        plot_1 = document.getElementById('time_of_day');
-      var trace1 = {
-   x: ["9AM", "10AM", "11AM", "12PM","1PM","2PM","3PM","4PM","5PM","6PM","7PM","8PM"],
-   y: [1331, 11078, 19650, 16711,9758,4522,2085,2033,3225,2363,580,130],
-   type: "line"
- };
- var data = [trace1];
+      <!-- Plot 1: Line Chart-->
+      <h3 style="color: #C0C0C0">Order Volume by Time of Day</h3>
+      <div id="time_of_day" style="width:1000px;height:450px;">
+        <script>
+          plot_1 = document.getElementById('time_of_day');
+          var trace1 = {
+            x: ["9AM", "10AM", "11AM", "12PM","1PM","2PM","3PM","4PM","5PM","6PM","7PM","8PM"],
+            y: [1331, 11078, 19650, 16711,9758,4522,2085,2033,3225,2363,580,130],
+            type: "line",
+            borderColor: "rgb(75, 192, 192)",
+          };
 
- var layout = {
-  xaxis: { title: "Time Of Day"},
-  yaxis: { title: "Units Sold"}
- };
- Plotly.newPlot("time_of_day", data, layout);
-  </script>
+          var data = [trace1];
 
-      <!-- Plot 2-->
+          var layout = {
+            xaxis: { title: "Time Of Day", },
+            yaxis: { title: "Units Sold", borderColor: "#FFA500"}
+          };
+          Plotly.newPlot("time_of_day", data, layout);
+
+
+          new Chart(document.getElementById("chartjs-0"),{
+            "type":"line",
+            "data":{
+              "labels":[
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July"
+              ],
+            "datasets":[{
+              "label":"My First Dataset",
+              "data":[
+              65,59,80,81,56,55,40
+              ],
+              "fill":false,
+              "borderColor":
+              "rgb(75, 192, 192)",
+              "lineTension":0.2}]},"options":{}});
+        </script>
+
+      <!-- Plot 2: Horizontal Bar Chart-->
       <br><br><h3 style="color: #C0C0C0">Order Volume by Day of Week</h3>
       <div id="day_of_week" style="width:1200px;height:400px;"></div>
       <script>
