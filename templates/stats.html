@@ -36,6 +36,9 @@
     <div class="col-md-12 text-left mt-3">
       <h2 style="color: orange">When Do Users Order?</h2>
       <BR>
+
+
+
       <!-- Plot 1: Line Chart-->
       <h3 style="color: #C0C0C0">Order Volume by Time of Day</h3>
       <div id="time_of_day" style="width:1000px;height:450px;">
@@ -60,6 +63,8 @@
           Plotly.newPlot("time_of_day", data, layout);
         </script>
 
+
+
       <!-- Plot 2: Horizontal Bar Chart-->
       <br><br><h3 style="color: #C0C0C0">Order Volume by Day of Week</h3>
 
@@ -71,7 +76,7 @@
         y: ['Monday ', 'Tuesday ', 'Wednesday ','Thursday ','Friday ','Saturday ','Sunday '],
         type: 'bar',
         orientation: 'h',
-        color: "orange"
+        color: "#FFA500"
       } 
       ];
       var layout = {
@@ -81,20 +86,21 @@
           }
       }
 
-
     Plotly.newPlot('day_of_week', data,layout);
       </script>
       
 
+
+
       <!-- Plot 3: Pie Chart-->
       <br><br><h3 style="color: #C0C0C0">Order Volume (Units Sold) by Lunch vs Dinner</h3>
-      <div id="lunch_dinner"></div>
+      <div id="lunch_dinner">
       <script>
-        plot_3 = document.getElementById('lunch_dinner');
+    var plot_3 = document.getElementById('lunch_dinner');
      var trace1 = {
         labels: ["Dinner", "Lunch"],
         values: [9603,63863],
-        /*backgroundColor: ["#0074D9", "#FF4136"],*/
+        backgroundColor: ["#0074D9", "#FF4136"],
         type: 'pie',
         colors: {
           segments: [
@@ -111,10 +117,16 @@
           ]
         },
         };
-      Plotly.newPlot("lunch_dinner", data, layout);
+
+     Plotly.newPlot("lunch_dinner", data, layout);
     </script>
+    </div>
     
       <BR><BR><BR><BR><BR><BR>
+
+
+
+      <!-- Plot 4: Vertical Bar Chart-->
       <h2 style="color: orange">What Do Users Order?</h2>
       <BR>
       <!-- Plot 4-->
@@ -266,7 +278,9 @@
   $( "#stats" ).addClass( "active" );
 
 
-</script>      
+</script>  
+
+
 
 
 <!-- your code end -->
