@@ -12,15 +12,15 @@
       <p>Based on personal preferences, create a restaurant order with whatever you're hungry for from in any or all of the categories; however, please know there's a limit of 1 item per category. 
       </p>
         {% if age_group == "0" %}
-        <a href="#Kids" style="color: ##44cc00">Kids</a> |
+        <a href="#Kids" style="color: #44cc00">Kids</a> |
         {% else %}    
         <a href="#Entrees" style="color: #44cc00">Entrées</a> |
         {% endif %}
         <a href="#Sides" style="color: #44cc00">Sides</a> | 
-        <a href="#Desserts" style="color: ##44cc00">Desserts</a> | 
-        <a href="#Beverages" style="color: ##44cc00">Beverages</a>  
+        <a href="#Desserts" style="color: #44cc00">Desserts</a> | 
+        <a href="#Beverages" style="color: #44cc00">Beverages</a>  
         {% if age_group == "2" %}
-          | <a href="#alcohol" style="color: ##44cc00">Adult Beverages</a>  
+          | <a href="#alcohol" style="color: #44cc00">Adult Beverages</a>  
         {% endif %}    
        <p></p>
        <form id="orderform" method="POST" action="/checkout">
@@ -195,6 +195,7 @@
   </div>
 {% endfor %}
 {% endif %}  
+</div>
 
 <p></p>
 
