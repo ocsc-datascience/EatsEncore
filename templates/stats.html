@@ -14,36 +14,6 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
     <style> 
-  /*h1 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 25px;
-    color: whitesmoke;
-    text-align: center;
-    background-color: rgb(41, 41, 41);
-  }
-
-  h2 {
-    color: black;
-    font-size: 25px;
-    text-align: center;
-  }
-
-  h3 {
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  h4 {
-    color: black;
-    font-size: 15px;
-    font-weight: lighter;
-    text-align: center;
-  }*/
 
   #icon {
     display: block;
@@ -75,11 +45,6 @@
     margin-right: auto;
     }
   
-  .order_button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
   
 </style>
 </head>
@@ -98,7 +63,7 @@
       <h2 style="color: orange">When Do Users Order?</h2>
       <BR>
       <!-- Plot 1-->
-      <h2>Order Volume by Time of Day</h2><br>
+      <h3 style="color: #C0C0C0">Order Volume by Time of Day</h3><br>
       <div id="time_of_day" style="width:1000px;height:450px;"></div>
       <script>
         plot_1 = document.getElementById('time_of_day');
@@ -117,7 +82,7 @@
   </script>
 
       <!-- Plot 2-->
-      <br><br><h2>Order Volume by Day of Week</h2>
+      <br><br><h3 style="color: #C0C0C0">Order Volume by Day of Week</h3>
       <div id="day_of_week" style="width:1200px;height:400px;"></div>
       <script>
         plot_2 = document.getElementById('day_of_week');
@@ -137,7 +102,7 @@
       </script>
       
       <!-- Plot 3-->
-      <br><br><h2>Order Volume (Units Sold) by Lunch vs Dinner</h2>
+      <br><br><h3 style="color: #C0C0C0">Order Volume (Units Sold) by Lunch vs Dinner</h3>
       <div id="lunch_dinner"></div>
       <script>
         plot_3 = document.getElementById('lunch_dinner');
@@ -155,10 +120,10 @@
     </script>
     
       <BR><BR><BR><BR><BR><BR>
-      <h3 style="color: orange">What Do Users Order?</h3>
+      <h2 style="color: orange">What Do Users Order?</h2>
       <BR>
       <!-- Plot 4-->
-      <h2>Units Sold by Item Category</h2><br>
+      <h3 style="color: #C0C0C0">Units Sold by Item Category</h3><br>
       <div id="item_category" style="width:1000px;height:400px;"></div>
       <script>
       plot_4=document.getElementById('plot_4')
@@ -179,78 +144,124 @@
 
       </script>
 
-    <br><br><br><h2>Most Popular Item in Each Category</h2><br>
-    <div class="row">
-      <div class="col-md-2">
-        <h3>Entrée</h3>
-        <h4>Mediterranean Salad with Chicken</h4><br>
-        <img id="icon" src="static/img/salad_mediterranean_salad_chicken.png" style="height: 85px; display: block;" alt="Mediterranean Salad with Chicken">
-        <br>
+    <br><br><br><h2 style="color: orange">Most Popular Item in Each Category</h2><br>
+
+<div class="row">
+<!-- Kids -->
+<div class="col-md-2">
+  <div class="card mb-2 box-shadow">
+    <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="static/img/fried_chicken-strips.png" data-holder-rendered="true">
+    <div class="card-body" style ="height: 120px">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group text-center">
+        </div>
       </div>
-      <div class="col-md-2">
-        <h3>Beverage</h3>
-        <h4>Fountain Beverage (L)</h4>
-        <br>
-        <img id="icon" src="static/img/bev_fountain_beverages.jpeg" style="height: 100px; display: block;" alt="Mediterranean Salad with Chicken">
-        <br>
-      </div>
-      <div class="col-md-2">
-        <h3>Kids</h3>
-        <h4>Chicken Strips</h4>
-        <br>
-        <img id="icon"  src="static/img/fried_chicken-strips.png" style="height: 100px; display: block;" alt="Mediterranean Salad with Chicken">
-        <br>
-      </div>
-      <div class="col-md-2">
-        <h3>Alcohol</h3>
-        <h4>Happy Daze</h4>
-        <br>
-        <img id="icon"  src="static/img/happy_daze.jpg" style="height: 100px; display: block;" alt="Mediterranean Salad with Chicken">
-        <br>
-      </div>
-      <div class="col-md-2">
-        <h3>Dessert</h3>
-        <h4>Cupcake</h4>
-        <br>
-        <img id="icon"  src="static/img/dessert_chocolate_cupcake.jpeg" style="height: 100px; display: block;" alt="Mediterranean Salad with Chicken">
-        <br>
-      </div>
-      <div class="col-md-2">
-        <h3>Side</h3>
-        <h4>French Fries</h4>
-        <br>
-        <img id="icon"  src="static/img/fries_french_fries.png" style="height: 100px; display: block;" alt="Mediterranean Salad with Chicken">
-        <br>
-      </div>
+      <p class="card-text" style="color: #C0C0C0'"><strong>Kids</strong><BR>Chicken Strips</p>
     </div>
+  </div>
+</div>
+
+<!-- Entree -->
+<div class="col-md-2">
+  <div class="card mb-2 box-shadow">
+    <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="static/img/salad_mediterranean_salad_chicken.png" data-holder-rendered="true">
+    <div class="card-body" style ="height: 120px">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group text-center">
+        </div>
+      </div>
+      <p class="card-text" style="color: #C0C0C0'"><strong>Entrée</strong><BR>Mediterranean Salad with Chicken</p>
+    </div>
+  </div>
+</div>
+
+<!-- Side -->
+<div class="col-md-2">
+  <div class="card mb-2 box-shadow">
+    <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="static/img/fries_french_fries.png" data-holder-rendered="true">
+    <div class="card-body" style ="height: 120px">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group text-center">
+        </div>
+      </div>
+      <p class="card-text" style="color: #C0C0C0'"><strong>Side</strong><BR>French Fries</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dessert -->
+<div class="col-md-2">
+  <div class="card mb-2 box-shadow">
+    <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="static/img/dessert_chocolate_cupcake.jpeg" data-holder-rendered="true">
+    <div class="card-body" style ="height: 120px">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group text-center">
+        </div>
+      </div>
+      <p class="card-text" style="color: #C0C0C0'"><strong>Dessert</strong><BR>Chocolate Cupcake</p>
+    </div>
+  </div>
+</div>
+
+<!-- Beverage -->
+<div class="col-md-2">
+  <div class="card mb-2 box-shadow">
+    <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="static/img/bev_fountain_beverages.jpeg" data-holder-rendered="true">
+    <div class="card-body" style ="height: 120px">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group text-center">
+        </div>
+      </div>
+      <p class="card-text" style="color: #C0C0C0'"><strong>Beverage</strong><BR>Fountain Beverages</p>
+    </div>
+  </div>
+</div>
+
+<!-- Boozy Alocholic Adult Beverage --> 
+<div class="col-md-2">
+  <div class="card mb-2 box-shadow">
+    <img class="card-img-top food-img"  style="height: 100px; width: 100%; display: block;" src="static/img/happy_daze.jpg" data-holder-rendered="true">
+    <div class="card-body" style ="height: 120px">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group text-center">
+        </div>
+      </div>
+      <p class="card-text" style="color: #C0C0C0'"><strong>Adult Beverage</strong><BR>Happy Daze Cocktail</p>
+    </div>
+  </div>
+</div>
+</div>
+<BR><BR><BR><BR><BR><BR>
+<h2 style="color: orange">How Much Do Users Order?</h2>
+<BR>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <img id="icon" src="static/img/Dining_Reservation.png" style="height: 100px; display: block;">
+      <br>
+      <h3 style="color: grey" align="center">Average Amount =</h3>
+      <h3 style="color: grey" align="center">$44.83</h3>
+      <br>
+    </div>
+
+    <div class="col-md-4">
+      <img id="icon" src="static/img/empty_cart.png" style="height: 100px; display: block;">
+      <br>
+      <h3 style="color: grey" align="ce">Average Number of Items =</h3>
+      <h3 style="color: grey" align="center">4.9 Items</h3>
+      <br>
+    </div>
+
+    <div class="col-md-4">
+      <img id="icon" src="static/img/Cart_Full.png" style="height: 100px; display: block;">
+      <br>
+      <h3 style="color: grey" align="center">Largest Volume Order = </h3>
+      <h3 style="color: grey" align="center">39 Items</h3>
+    </div>
+    <div>
       <BR><BR><BR><BR><BR><BR>
-      <h3 style="color: orange">How Much Do Users Order?</h3>
-      <BR>
-        <div class="container">
-          <div class="row">
-        <div class="col-md-4">
-          <img id="icon" src="static/img/Dining_Reservation.png" style="height: 100px; display: block;">
-          <br>
-          <h3>Average Order Volume</h3>
-          <h2>$44.83</h2>
-          <br>
-        </div>
-        <div class="col-md-4">
-          <img id="icon" src="static/img/empty_cart.png" style="height: 100px; display: block;">
-          <br>
-          <h3>Average Cart Size</h3>
-          <h2>4.9 Items</h2>
-          <br>
-        </div>
-        <div class="col-md-4">
-          <img id="icon" src="static/img/Cart_Full.png" style="height: 100px; display: block;">
-          <br>
-          <h3>Biggest Order Volume</h3>
-          <h2>39 Items</h2>
-        </div>
-        <div><BR><BR><BR><BR><BR><BR>
-          <p>* Note: Data based on 07/31/2018 through 11/25/2018</p>
-        </div>
+      <p><i>* Note: Proprietary data based on restaurant orders from 31 July 2018 – 25 November 2018</i></p>
+    </div>
 </body>
 
 
